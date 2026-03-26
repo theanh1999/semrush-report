@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phân Tích Chuyên Sâu SEO - So Sánh Chéo | 26/03/2026</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+            padding: 40px 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin: 30px 0 20px 0;
+            color: #ffffff;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #0f9eff;
+        }
+
+        .date-info {
+            font-size: 1.1em;
+            color: #b0b0b0;
+        }
+
+        .section {
+            background: #16213e;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            border-left: 5px solid #0f9eff;
+        }
+
+        .section-title {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin-bottom: 30px;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .metric-card {
+            background: #0f3460;
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid #0f9eff;
+            text-align: center;
+        }
+
+        .metric-label {
+            font-size: 0.85em;
+            color: #a0a0a0;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .metric-value {
+            font-size: 1.8em;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        thead {
+            background: #0f3460;
+        }
+
+        th {
+            padding: 12px 15px;
+            text-align: left;
+            color: #ffffff;
+            font-weight: 600;
+            border-bottom: 2px solid #0f9eff;
+        }
+
+        td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #2a3f5f;
+            color: #c0c0c0;
+        }
+
+        tr:hover {
+            background-color: #1f3a52;
+        }
+
+        .rank-1 {
+            background-color: rgba(76, 175, 80, 0.1);
+            border-left: 4px solid #4CAF50;
+        }
+
+        .rank-last {
+            background-color: rgba(244, 67, 54, 0.1);
+            border-left: 4px solid #F44336;
+        }
+
+        .positive {
+            color: #4CAF50;
+            font-weight: 600;
+        }
+
+        .negative {
+            color: #F44336;
+            font-weight: 600;
+        }
+
+        .highlight-good {
+            background-color: rgba(76, 175, 80, 0.15);
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #4CAF50;
+            margin: 15px 0;
+            color: #c0c0c0;
+        }
+
+        .highlight-warning {
+            background-color: rgba(244, 67, 54, 0.15);
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #F44336;
+            margin: 15px 0;
+            color: #c0c0c0;
+        }
+
+        .highlight-info {
+            background-color: rgba(33, 150, 243, 0.15);
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #2196F3;
+            margin: 15px 0;
+            color: #c0c0c0;
+        }
+
+        .insights-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .insights-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #2a3f5f;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .insights-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #0f9eff;
+            font-weight: bold;
+        }
+
+        .insights-list li:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .comparison-table tr td:first-child {
+            font-weight: 600;
+            background-color: #0f3460;
+        }
+
+        .legend {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #c0c0c0;
+            font-size: 0.9em;
+        }
+
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+        }
+
+        footer {
+            text-align: center;
+            color: #808080;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #2a3f5f;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.4em;
+            }
+
+            .chart-container {
+                height: 300px;
+            }
+
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 0.8em;
+            }
+
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Phân Tích Chuyên Sâu SEO - So Sánh Chéo</h1>
+            <p class="date-info">Ngày: 26/03/2026</p>
+        </header>
+
+        <!-- Section 1: Compare 3 Groups -->
+        <div class="section">
+            <h2>So Sánh Tổng Quan Giữa 3 Nhóm</h2>
+
+            <div class="chart-container">
+                <canvas id="radarChart"></canvas>
+            </div>
+
+            <div class="table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Chỉ Số</th>
+                            <th>Nhà Hàng (Avg)</th>
+                            <th>Hotel (Avg)</th>
+                            <th>Đối Thủ (Avg)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="groupComparisonTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Section 2: Restaurant Group Analysis -->
+        <div class="section">
+            <h2>Phân Tích Nhóm Nhà Hàng</h2>
+
+            <div class="chart-container">
+                <canvas id="restaurantTrafficChart"></canvas>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Xếp Hạng</th>
+                            <th>Domain</th>
+                            <th>Authority Score</th>
+                            <th>Organic Traffic</th>
+                            <th>Từ Khóa</th>
+                            <th>Thay Đổi Traffic %</th>
+                        </tr>
+                    </thead>
+                    <tbody id="restaurantTable">
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="restaurantInsights"></div>
+        </div>
+
+        <!-- Section 3: Hotel Analysis -->
+        <div class="section">
+            <h2>Phân Tích Nhóm Hotel</h2>
+
+            <div class="comparison-grid" id="hotelMetrics">
+            </div>
+
+            <div id="hotelInsights"></div>
+        </div>
+
+        <!-- Section 4: Competitor Analysis -->
+        <div class="section">
+            <h2>Phân Tích Nhóm Đối Thủ</h2>
+
+            <div class="chart-container">
+                <canvas id="competitorTrafficChart"></canvas>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Xếp Hạng</th>
+                            <th>Domain</th>
+                            <th>Authority Score</th>
+                            <th>Organic Traffic</th>
+                            <th>Từ Khóa</th>
+                            <th>Thay Đổi Traffic %</th>
+                        </tr>
+                    </thead>
+                    <tbody id="competitorTable">
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="competitorInsights"></div>
+        </div>
+
+        <!-- Section 5: Cross Comparison -->
+        <div class="section">
+            <h2>So Sánh Chéo: Nhóm Mình vs Đối Thủ</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Chỉ Số</th>
+                            <th>Nhà Hàng + Hotel</th>
+                            <th>Đối Thủ</th>
+                            <th>Chênh Lệch</th>
+                        </tr>
+                    </thead>
+                    <tbody id="crossComparisonTable">
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="trafficShareChart"></canvas>
+            </div>
+
+            <div id="crossInsights"></div>
+        </div>
+
+        <!-- Section 6: Insights and Recommendations -->
+        <div class="section">
+            <h2>Nhận Xét và Khuyến Nghị</h2>
+
+            <div id="insightsSection"></div>
+        </div>
+
+        <footer>
+            <p>Báo cáo phân tích chuyên sâu được tạo vào 26/03/2026 | Dữ liệu từ Semrush</p>
+        </footer>
+    </div>
+
+    <script>
+        const data = [{"domain": "goto-where.com", "group": "Nhà hàng", "as": 50, "traffic": 1000000, "traffic_pct": 31, "paid_traffic": 0, "ref_domains": 3400, "traffic_share": 28, "keywords": 902800, "kw_pct": 10, "paid_kw": 0, "backlinks": 77000}, {"domain": "menu-world.com", "group": "Nhà hàng", "as": 57, "traffic": 1900000, "traffic_pct": 5.7, "paid_traffic": 0, "ref_domains": 4200, "traffic_share": 32, "keywords": 1900000, "kw_pct": 2.1, "paid_kw": 0, "backlinks": 111500}, {"domain": "grubbio.com", "group": "Nhà hàng", "as": 34, "traffic": 91100, "traffic_pct": 5.4, "paid_traffic": 0, "ref_domains": 1600, "traffic_share": 82, "keywords": 50400, "kw_pct": 26, "paid_kw": 0, "backlinks": 17600}, {"domain": "menustic.com", "group": "Nhà hàng", "as": 40, "traffic": 253200, "traffic_pct": 25, "paid_traffic": 0, "ref_domains": 1600, "traffic_share": 26, "keywords": 81000, "kw_pct": 34, "paid_kw": 0, "backlinks": 18900}, {"domain": "menufyy.com", "group": "Nhà hàng", "as": 40, "traffic": 282900, "traffic_pct": 98, "paid_traffic": 5, "ref_domains": 2400, "traffic_share": 6, "keywords": 152000, "kw_pct": 85, "paid_kw": 4, "backlinks": 76000}, {"domain": "gohotelly.com", "group": "Nhà hàng / Hotel", "as": 20, "traffic": 13500, "traffic_pct": 23, "paid_traffic": 0, "ref_domains": 277, "traffic_share": 19, "keywords": 4200, "kw_pct": 53, "paid_kw": 0, "backlinks": 1900}, {"domain": "res-menu.net", "group": "Nhà hàng", "as": 51, "traffic": 741400, "traffic_pct": 26, "paid_traffic": 0, "ref_domains": 3200, "traffic_share": 33, "keywords": 1100000, "kw_pct": 40, "paid_kw": 0, "backlinks": 164600}, {"domain": "restaurants-world.net", "group": "Nhà hàng", "as": 51, "traffic": 740500, "traffic_pct": 7.2, "paid_traffic": 0, "ref_domains": 2700, "traffic_share": 31, "keywords": 834000, "kw_pct": 19, "paid_kw": 0, "backlinks": 87800}, {"domain": "wherevi.com", "group": "Nhà hàng", "as": 33, "traffic": 106100, "traffic_pct": 1.4, "paid_traffic": 0, "ref_domains": 534, "traffic_share": 6, "keywords": 70600, "kw_pct": -7.3, "paid_kw": 0, "backlinks": 7200}, {"domain": "localoria.com", "group": "Nhà hàng", "as": 26, "traffic": 29500, "traffic_pct": 22, "paid_traffic": 0, "ref_domains": 1200, "traffic_share": 31, "keywords": 16500, "kw_pct": 51, "paid_kw": 0, "backlinks": 22100}, {"domain": "placejoys.com", "group": "Nhà hàng", "as": 41, "traffic": 315100, "traffic_pct": 104, "paid_traffic": 0, "ref_domains": 3000, "traffic_share": 13, "keywords": 106200, "kw_pct": 172, "paid_kw": 0, "backlinks": 72300}, {"domain": "wherebly.com", "group": "Nhà hàng", "as": 0, "traffic": 3200, "traffic_pct": 15357, "paid_traffic": 0, "ref_domains": 43, "traffic_share": 6, "keywords": 210, "kw_pct": 5150, "paid_kw": 0, "backlinks": 129}, {"domain": "foodplacee.com", "group": "Nhà hàng", "as": 0, "traffic": 1200, "traffic_pct": 100, "paid_traffic": 0, "ref_domains": 46, "traffic_share": 14, "keywords": 336, "kw_pct": 33500, "paid_kw": 0, "backlinks": 86}, {"domain": "wheree.com", "group": "Đối thủ", "as": 69, "traffic": 11100000, "traffic_pct": -6.7, "paid_traffic": 0, "ref_domains": 7100, "traffic_share": 6, "keywords": 25100000, "kw_pct": 1.3, "paid_kw": 0, "backlinks": 274600}, {"domain": "com-fnb.com", "group": "Đối thủ", "as": 28, "traffic": 3900, "traffic_pct": -67, "paid_traffic": 0, "ref_domains": 480, "traffic_share": 1, "keywords": 49400, "kw_pct": -67, "paid_kw": 0, "backlinks": 1200}, {"domain": "com-place.com", "group": "Đối thủ", "as": 50, "traffic": 1300000, "traffic_pct": 11, "paid_traffic": 0, "ref_domains": 1600, "traffic_share": 36, "keywords": 717500, "kw_pct": 6.6, "paid_kw": 0, "backlinks": 8700}, {"domain": "goto-restaurants.com", "group": "Đối thủ", "as": 46, "traffic": 418600, "traffic_pct": 19, "paid_traffic": 0, "ref_domains": 1700, "traffic_share": 17, "keywords": 469900, "kw_pct": 17, "paid_kw": 0, "backlinks": 16400}, {"domain": "wanderlog.com", "group": "Đối thủ", "as": 81, "traffic": 12400000, "traffic_pct": -6.6, "paid_traffic": 1, "ref_domains": 29500, "traffic_share": 7, "keywords": 12300000, "kw_pct": -15, "paid_kw": 1, "backlinks": 22800000}, {"domain": "menu-res.com", "group": "Đối thủ", "as": 34, "traffic": 311900, "traffic_pct": 45, "paid_traffic": 0, "ref_domains": 670, "traffic_share": 11, "keywords": 220200, "kw_pct": 22, "paid_kw": 0, "backlinks": 4500}, {"domain": "restaurantmenu.us.com", "group": "Đối thủ", "as": 15, "traffic": 38100, "traffic_pct": 17, "paid_traffic": 0, "ref_domains": 200, "traffic_share": 17, "keywords": 27800, "kw_pct": 14, "paid_kw": 0, "backlinks": 834}, {"domain": "com-hotel.com", "group": "Đối thủ", "as": 59, "traffic": 1700000, "traffic_pct": 2.9, "paid_traffic": 0, "ref_domains": 7100, "traffic_share": 24, "keywords": 698200, "kw_pct": -7.6, "paid_kw": 0, "backlinks": 110100}, {"domain": "gotoeat.net", "group": "Đối thủ", "as": 33, "traffic": 114400, "traffic_pct": 60, "paid_traffic": 0, "ref_domains": 526, "traffic_share": 3, "keywords": 101300, "kw_pct": 53, "paid_kw": 0, "backlinks": 3600}, {"domain": "restaurants-info.com", "group": "Đối thủ", "as": 38, "traffic": 173800, "traffic_pct": 43, "paid_traffic": 0, "ref_domains": 605, "traffic_share": 3, "keywords": 144500, "kw_pct": 26, "paid_kw": 0, "backlinks": 4200}, {"domain": "hey-restaurants.com", "group": "Đối thủ", "as": 38, "traffic": 120600, "traffic_pct": 45, "paid_traffic": 0, "ref_domains": 575, "traffic_share": 7, "keywords": 168000, "kw_pct": 30, "paid_kw": 0, "backlinks": 4400}, {"domain": "eatat.us", "group": "Đối thủ", "as": 24, "traffic": 21100, "traffic_pct": 41, "paid_traffic": 0, "ref_domains": 83, "traffic_share": 84, "keywords": 2800, "kw_pct": 6, "paid_kw": 0, "backlinks": 387}];
+
+        function formatNumber(num) {
+            if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+            if (num >= 1000) return (num / 1000).toFixed(0) + 'K';
+            return num.toString();
+        }
+
+        function getGroupData(groupFilter) {
+            return data.filter(d => {
+                if (groupFilter === 'nhà hàng') {
+                    return d.group.includes('Nhà hàng');
+                } else if (groupFilter === 'hotel') {
+                    return d.group.includes('Hotel');
+                } else if (groupFilter === 'đối thủ') {
+                    return d.group.includes('Đối thủ');
+                }
+                return false;
+            });
+        }
+
+        function calculateAverage(items, field) {
+            if (items.length === 0) return 0;
+            return items.reduce((sum, item) => sum + item[field], 0) / items.length;
+        }
+
+        // Group 1: Compare 3 Groups
+        const restaurantData = getGroupData('nhà hàng');
+        const hotelData = getGroupData('hotel');
+        const competitorData = getGroupData('đối thủ');
+
+        const restaurantAvg = {
+            as: calculateAverage(restaurantData, 'as'),
+            traffic: calculateAverage(restaurantData, 'traffic'),
+            keywords: calculateAverage(restaurantData, 'keywords'),
+            ref_domains: calculateAverage(restaurantData, 'ref_domains'),
+            backlinks: calculateAverage(restaurantData, 'backlinks'),
+            traffic_pct: calculateAverage(restaurantData, 'traffic_pct'),
+            kw_pct: calculateAverage(restaurantData, 'kw_pct')
+        };
+
+        const hotelAvg = {
+            as: calculateAverage(hotelData, 'as'),
+            traffic: calculateAverage(hotelData, 'traffic'),
+            keywords: calculateAverage(hotelData, 'keywords'),
+            ref_domains: calculateAverage(hotelData, 'ref_domains'),
+            backlinks: calculateAverage(hotelData, 'backlinks'),
+            traffic_pct: calculateAverage(hotelData, 'traffic_pct'),
+            kw_pct: calculateAverage(hotelData, 'kw_pct')
+        };
+
+        const competitorAvg = {
+            as: calculateAverage(competitorData, 'as'),
+            traffic: calculateAverage(competitorData, 'traffic'),
+            keywords: calculateAverage(competitorData, 'keywords'),
+            ref_domains: calculateAverage(competitorData, 'ref_domains'),
+            backlinks: calculateAverage(competitorData, 'backlinks'),
+            traffic_pct: calculateAverage(competitorData, 'traffic_pct'),
+            kw_pct: calculateAverage(competitorData, 'kw_pct')
+        };
+
+        // Normalize for radar chart (0-100 scale)
+        function normalizeValue(value, maxValue) {
+            return (value / maxValue) * 100;
+        }
+
+        const maxAs = Math.max(restaurantAvg.as, hotelAvg.as, competitorAvg.as) || 1;
+        const maxTraffic = Math.max(restaurantAvg.traffic, hotelAvg.traffic, competitorAvg.traffic) || 1;
+        const maxKeywords = Math.max(restaurantAvg.keywords, hotelAvg.keywords, competitorAvg.keywords) || 1;
+        const maxRefDomains = Math.max(restaurantAvg.ref_domains, hotelAvg.ref_domains, competitorAvg.ref_domains) || 1;
+
+        // Populate Group Comparison Table
+        const groupComparisonTbody = document.getElementById('groupComparisonTable');
+        const comparisonData = [
+            { label: 'Authority Score (Avg)', r: restaurantAvg.as, h: hotelAvg.as, c: competitorAvg.as },
+            { label: 'Organic Traffic (Avg)', r: formatNumber(restaurantAvg.traffic), h: formatNumber(hotelAvg.traffic), c: formatNumber(competitorAvg.traffic) },
+            { label: 'Từ Khóa (Avg)', r: formatNumber(restaurantAvg.keywords), h: formatNumber(hotelAvg.keywords), c: formatNumber(competitorAvg.keywords) },
+            { label: 'Referring Domains (Avg)', r: formatNumber(restaurantAvg.ref_domains), h: formatNumber(hotelAvg.ref_domains), c: formatNumber(competitorAvg.ref_domains) },
+            { label: 'Traffic Growth % (Avg)', r: restaurantAvg.traffic_pct.toFixed(1) + '%', h: hotelAvg.traffic_pct.toFixed(1) + '%', c: competitorAvg.traffic_pct.toFixed(1) + '%' }
+        ];
+
+        comparisonData.forEach(row => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+                <td>${row.label}</td>
+                <td>${row.r}</td>
+                <td>${row.h}</td>
+                <td>${row.c}</td>
+            `;
+            groupComparisonTbody.appendChild(tr);
+        });
+
+        // Radar Chart
+        const radarCtx = document.getElementById('radarChart').getContext('2d');
+        new Chart(radarCtx, {
+            type: 'radar',
+            data: {
+                labels: ['Authority Score', 'Traffic', 'Keywords', 'Ref Domains', 'Backlinks'],
+                datasets: [
+                    {
+                        label: 'Nhà Hàng',
+                        data: [
+                            normalizeValue(restaurantAvg.as, maxAs),
+                            normalizeValue(restaurantAvg.traffic, maxTraffic),
+                            normalizeValue(restaurantAvg.keywords, maxKeywords),
+                            normalizeValue(restaurantAvg.ref_domains, maxRefDomains),
+                            normalizeValue(restaurantAvg.backlinks, 300000)
+                        ],
+                        borderColor: '#4CAF50',
+                        backgroundColor: 'rgba(76, 175, 80, 0.2)',
+                        tension: 0.3
+                    },
+                    {
+                        label: 'Hotel',
+                        data: [
+                            normalizeValue(hotelAvg.as, maxAs),
+                            normalizeValue(hotelAvg.traffic, maxTraffic),
+                            normalizeValue(hotelAvg.keywords, maxKeywords),
+                            normalizeValue(hotelAvg.ref_domains, maxRefDomains),
+                            normalizeValue(hotelAvg.backlinks, 300000)
+                        ],
+                        borderColor: '#2196F3',
+                        backgroundColor: 'rgba(33, 150, 243, 0.2)',
+                        tension: 0.3
+                    },
+                    {
+                        label: 'Đối Thủ',
+                        data: [
+                            normalizeValue(competitorAvg.as, maxAs),
+                            normalizeValue(competitorAvg.traffic, maxTraffic),
+                            normalizeValue(competitorAvg.keywords, maxKeywords),
+                            normalizeValue(competitorAvg.ref_domains, maxRefDomains),
+                            normalizeValue(competitorAvg.backlinks, 300000)
+                        ],
+                        borderColor: '#F44336',
+                        backgroundColor: 'rgba(244, 67, 54, 0.2)',
+                        tension: 0.3
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#e0e0e0'
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: '#ffffff',
+                        bodyColor: '#e0e0e0',
+                        borderColor: '#0f9eff',
+                        borderWidth: 1
+                    }
+                },
+                scales: {
+                    r: {
+                        ticks: {
+                            color: '#a0a0a0',
+                            backdropColor: 'transparent'
+                        },
+                        grid: {
+                            color: '#2a3f5f'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Restaurant Analysis
+        const sortedRestaurants = [...restaurantData].sort((a, b) => b.traffic - a.traffic);
+        const restaurantTbody = document.getElementById('restaurantTable');
+        sortedRestaurants.forEach((item, idx) => {
+            const tr = document.createElement('tr');
+            if (idx === 0) tr.className = 'rank-1';
+            if (idx === sortedRestaurants.length - 1) tr.className = 'rank-last';
+
+            const trafficClass = item.traffic_pct >= 0 ? 'positive' : 'negative';
+            tr.innerHTML = `
+                <td>#${idx + 1}</td>
+                <td>${item.domain}</td>
+                <td>${item.as}</td>
+                <td>${formatNumber(item.traffic)}</td>
+                <td>${formatNumber(item.keywords)}</td>
+                <td class="${trafficClass}">${item.traffic_pct >= 0 ? '+' : ''}${item.traffic_pct}%</td>
+            `;
+            restaurantTbody.appendChild(tr);
+        });
+
+        // Restaurant Traffic Chart
+        const restaurantCtx = document.getElementById('restaurantTrafficChart').getContext('2d');
+        new Chart(restaurantCtx, {
+            type: 'bar',
+            data: {
+                labels: sortedRestaurants.map(d => d.domain),
+                datasets: [{
+                    label: 'Organic Traffic',
+                    data: sortedRestaurants.map(d => d.traffic / 1000000),
+                    backgroundColor: '#4CAF50',
+                    borderColor: '#4CAF50',
+                    borderWidth: 1,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: '#ffffff',
+                        bodyColor: '#e0e0e0',
+                        borderColor: '#0f9eff',
+                        borderWidth: 1,
+                        callbacks: {
+                            label: function(context) {
+                                return 'Traffic: ' + context.parsed.x.toFixed(2) + 'M';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: '#2a3f5f' }
+                    },
+                    y: {
+                        ticks: { color: '#a0a0a0', font: { size: 10 } },
+                        grid: { color: '#2a3f5f' }
+                    }
+                }
+            }
+        });
+
+        // Restaurant Insights
+        const topRestaurants = sortedRestaurants.slice(0, 3);
+        const bottomRestaurants = sortedRestaurants.slice(-3);
+        const highGrowth = sortedRestaurants.filter(r => r.traffic_pct > 50).sort((a, b) => b.traffic_pct - a.traffic_pct);
+
+        let restaurantInsightsHtml = '<div class="highlight-good"><strong>Các Website Hiệu Suất Cao:</strong><br>' + topRestaurants.map(r => `${r.domain} (${formatNumber(r.traffic)} traffic, +${r.traffic_pct}%)`).join('<br>') + '</div>';
+        restaurantInsightsHtml += '<div class="highlight-warning"><strong>Các Website Cần Chú Ý:</strong><br>' + bottomRestaurants.map(r => `${r.domain} (${formatNumber(r.traffic)} traffic)`).join('<br>') + '</div>';
+        if (highGrowth.length > 0) {
+            restaurantInsightsHtml += '<div class="highlight-info"><strong>Các Website Tăng Trưởng Nhanh:</strong><br>' + highGrowth.map(r => `${r.domain} (+${r.traffic_pct}% traffic, +${r.kw_pct}% keywords)`).join('<br>') + '</div>';
+        }
+        document.getElementById('restaurantInsights').innerHTML = restaurantInsightsHtml;
+
+        // Hotel Analysis
+        let hotelMetricsHtml = '';
+        hotelData.forEach(item => {
+            hotelMetricsHtml += `
+                <div class="metric-card">
+                    <div class="metric-label">${item.domain}</div>
+                    <div class="metric-value">${item.as}</div>
+                    <div class="metric-label" style="margin-top: 10px;">Authority Score</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Organic Traffic</div>
+                    <div class="metric-value">${formatNumber(item.traffic)}</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Từ Khóa</div>
+                    <div class="metric-value">${formatNumber(item.keywords)}</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Thay Đổi</div>
+                    <div class="metric-value" style="color: #4CAF50;">+${item.traffic_pct}%</div>
+                </div>
+            `;
+        });
+        document.getElementById('hotelMetrics').innerHTML = hotelMetricsHtml;
+
+        const hotelInsightsHtml = '<div class="highlight-info"><strong>So Sánh với Trung Bình Nhóm Nhà Hàng:</strong><br>Authority Score: ' + hotelAvg.as.toFixed(1) + ' (so với ' + restaurantAvg.as.toFixed(1) + ')<br>Traffic: ' + formatNumber(hotelAvg.traffic) + ' (so với ' + formatNumber(restaurantAvg.traffic) + ')</div>';
+        document.getElementById('hotelInsights').innerHTML = hotelInsightsHtml;
+
+        // Competitor Analysis
+        const sortedCompetitors = [...competitorData].sort((a, b) => b.traffic - a.traffic);
+        const competitorTbody = document.getElementById('competitorTable');
+        sortedCompetitors.forEach((item, idx) => {
+            const tr = document.createElement('tr');
+            if (idx === 0) tr.className = 'rank-1';
+            if (idx === sortedCompetitors.length - 1) tr.className = 'rank-last';
+
+            const trafficClass = item.traffic_pct >= 0 ? 'positive' : 'negative';
+            tr.innerHTML = `
+                <td>#${idx + 1}</td>
+                <td>${item.domain}</td>
+                <td>${item.as}</td>
+                <td>${formatNumber(item.traffic)}</td>
+                <td>${formatNumber(item.keywords)}</td>
+                <td class="${trafficClass}">${item.traffic_pct >= 0 ? '+' : ''}${item.traffic_pct}%</td>
+            `;
+            competitorTbody.appendChild(tr);
+        });
+
+        // Competitor Traffic Chart
+        const competitorCtx = document.getElementById('competitorTrafficChart').getContext('2d');
+        new Chart(competitorCtx, {
+            type: 'bar',
+            data: {
+                labels: sortedCompetitors.map(d => d.domain),
+                datasets: [{
+                    label: 'Organic Traffic',
+                    data: sortedCompetitors.map(d => d.traffic / 1000000),
+                    backgroundColor: '#F44336',
+                    borderColor: '#F44336',
+                    borderWidth: 1,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: '#ffffff',
+                        bodyColor: '#e0e0e0',
+                        borderColor: '#0f9eff',
+                        borderWidth: 1,
+                        callbacks: {
+                            label: function(context) {
+                                return 'Traffic: ' + context.parsed.x.toFixed(2) + 'M';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: { color: '#a0a0a0' },
+                        grid: { color: '#2a3f5f' }
+                    },
+                    y: {
+                        ticks: { color: '#a0a0a0', font: { size: 10 } },
+                        grid: { color: '#2a3f5f' }
+                    }
+                }
+            }
+        });
+
+        // Competitor Insights
+        const topCompetitors = sortedCompetitors.slice(0, 3);
+        const growingCompetitors = sortedCompetitors.filter(c => c.traffic_pct > 30).sort((a, b) => b.traffic_pct - a.traffic_pct);
+        const decliningCompetitors = sortedCompetitors.filter(c => c.traffic_pct < -5);
+
+        let competitorInsightsHtml = '<div class="highlight-warning"><strong>Đối Thủ Hàng Đầu (Đe Dọa):</strong><br>' + topCompetitors.map(c => `${c.domain} (AS: ${c.as}, ${formatNumber(c.traffic)} traffic)`).join('<br>') + '</div>';
+        if (growingCompetitors.length > 0) {
+            competitorInsightsHtml += '<div class="highlight-warning"><strong>Đối Thủ Đang Tăng Trưởng Nhanh:</strong><br>' + growingCompetitors.map(c => `${c.domain} (+${c.traffic_pct}% traffic)`).join('<br>') + '</div>';
+        }
+        if (decliningCompetitors.length > 0) {
+            competitorInsightsHtml += '<div class="highlight-good"><strong>Đối Thủ Đang Suy Giảm:</strong><br>' + decliningCompetitors.map(c => `${c.domain} (${c.traffic_pct}% traffic)`).join('<br>') + '</div>';
+        }
+        document.getElementById('competitorInsights').innerHTML = competitorInsightsHtml;
+
+        // Cross Comparison
+        const allOwnData = [...restaurantData, ...hotelData];
+        const ownAvgAs = calculateAverage(allOwnData, 'as');
+        const ownTotalTraffic = allOwnData.reduce((sum, item) => sum + item.traffic, 0);
+        const ownTotalKeywords = allOwnData.reduce((sum, item) => sum + item.keywords, 0);
+        const ownTotalBacklinks = allOwnData.reduce((sum, item) => sum + item.backlinks, 0);
+        const ownAvgGrowth = calculateAverage(allOwnData, 'traffic_pct');
+
+        const competitorTotalTraffic = competitorData.reduce((sum, item) => sum + item.traffic, 0);
+        const competitorTotalKeywords = competitorData.reduce((sum, item) => sum + item.keywords, 0);
+        const competitorTotalBacklinks = competitorData.reduce((sum, item) => sum + item.backlinks, 0);
+
+        const crossComparisonTbody = document.getElementById('crossComparisonTable');
+        const crossData = [
+            { label: 'Authority Score (Avg)', own: ownAvgAs.toFixed(1), comp: competitorAvg.as.toFixed(1), diff: (ownAvgAs - competitorAvg.as).toFixed(1) },
+            { label: 'Total Organic Traffic', own: formatNumber(ownTotalTraffic), comp: formatNumber(competitorTotalTraffic), diff: ((ownTotalTraffic - competitorTotalTraffic) / competitorTotalTraffic * 100).toFixed(1) + '%' },
+            { label: 'Total Keywords', own: formatNumber(ownTotalKeywords), comp: formatNumber(competitorTotalKeywords), diff: ((ownTotalKeywords - competitorTotalKeywords) / competitorTotalKeywords * 100).toFixed(1) + '%' },
+            { label: 'Total Backlinks', own: formatNumber(ownTotalBacklinks), comp: formatNumber(competitorTotalBacklinks), diff: ((ownTotalBacklinks - competitorTotalBacklinks) / competitorTotalBacklinks * 100).toFixed(1) + '%' },
+            { label: 'Avg Growth Rate', own: ownAvgGrowth.toFixed(1) + '%', comp: competitorAvg.traffic_pct.toFixed(1) + '%', diff: (ownAvgGrowth - competitorAvg.traffic_pct).toFixed(1) + '%' }
+        ];
+
+        crossData.forEach(row => {
+            const tr = document.createElement('tr');
+            const diffColor = parseFloat(row.diff) >= 0 ? 'positive' : 'negative';
+            tr.innerHTML = `
+                <td>${row.label}</td>
+                <td>${row.own}</td>
+                <td>${row.comp}</td>
+                <td class="${diffColor}">${row.diff}</td>
+            `;
+            crossComparisonTbody.appendChild(tr);
+        });
+
+        // Traffic Share Doughnut Chart
+        const trafficShareCtx = document.getElementById('trafficShareChart').getContext('2d');
+        new Chart(trafficShareCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Nhóm Mình (Nhà Hàng + Hotel)', 'Nhóm Đối Thủ'],
+                datasets: [{
+                    data: [ownTotalTraffic / 1000000, competitorTotalTraffic / 1000000],
+                    backgroundColor: ['#4CAF50', '#F44336'],
+                    borderColor: '#1a1a2e',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: { color: '#e0e0e0' }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: '#ffffff',
+                        bodyColor: '#e0e0e0',
+                        borderColor: '#0f9eff',
+                        borderWidth: 1,
+                        callbacks: {
+                            label: function(context) {
+                                const total = ownTotalTraffic + competitorTotalTraffic;
+                                const percentage = (context.parsed / (total / 1000000) * 100).toFixed(1);
+                                return context.label + ': ' + context.parsed.toFixed(1) + 'M (' + percentage + '%)';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Cross Comparison Insights
+        const crossInsightsHtml = `
+            <div class="highlight-info"><strong>Tóm Tắt So Sánh:</strong><br>
+            Nhóm mình đang kiểm soát ${(ownTotalTraffic / (ownTotalTraffic + competitorTotalTraffic) * 100).toFixed(1)}% của tổng lưu lượng trong thị trường.<br>
+            Có ${allOwnData.length} website của mình so với ${competitorData.length} website đối thủ.<br>
+            Mức tăng trưởng trung bình: +${ownAvgGrowth.toFixed(1)}% (so với ${competitorAvg.traffic_pct.toFixed(1)}% của đối thủ)
+            </div>
+        `;
+        document.getElementById('crossInsights').innerHTML = crossInsightsHtml;
+
+        // Final Insights and Recommendations
+        const outperformingSites = allOwnData.filter(s => sortedCompetitors.some(c => s.traffic > c.traffic)).length;
+        const threateningSites = sortedCompetitors.filter(c => c.traffic_pct > 30 || c.as > 70);
+        const decliningSites = allOwnData.filter(s => s.traffic_pct < 0);
+
+        let insightsHtml = '<ul class="insights-list">';
+
+        // Insight 1: Performance
+        if (outperformingSites > 0) {
+            insightsHtml += `<li><strong>Điểm Mạnh:</strong> Bạn có ${outperformingSites} website vượt trội hơn các đối thủ tương ứng, cho thấy vị trí cạnh tranh mạnh mẽ.</li>`;
+        }
+
+        // Insight 2: Top sites performance
+        const topOwnSite = sortedRestaurants[0];
+        insightsHtml += `<li><strong>Top Performer:</strong> ${topOwnSite.domain} dẫn đầu với ${formatNumber(topOwnSite.traffic)} lưu lượng hữu cơ và mức tăng trưởng ${topOwnSite.traffic_pct}%.</li>`;
+
+        // Insight 3: Threats
+        if (threateningSites.length > 0) {
+            const topThreat = threateningSites[0];
+            insightsHtml += `<li><strong>Mối Đe Dọa Chính:</strong> ${topThreat.domain} là đối thủ lớn nhất với Authority Score ${topThreat.as} và ${formatNumber(topThreat.traffic)} lưu lượng.</li>`;
+        }
+
+        // Insight 4: Growth opportunities
+        if (highGrowth.length > 0) {
+            insightsHtml += `<li><strong>Cơ Hội Tăng Trưởng:</strong> Những website như ${highGrowth.slice(0, 2).map(s => s.domain).join(', ')} đang tăng trưởng nhanh chóng (>50% traffic growth).</li>`;
+        }
+
+        // Insight 5: Sites needing attention
+        if (decliningSites.length > 0) {
+            insightsHtml += `<li><strong>Website Cần Chú Ý:</strong> ${decliningSites.map(s => s.domain).join(', ')} đang suy giảm trong hiệu suất. Cần tập trung vào tối ưu hóa và nâng cấp nội dung.</li>`;
+        }
+
+        // Insight 6: Market share
+        const marketShare = (ownTotalTraffic / (ownTotalTraffic + competitorTotalTraffic) * 100).toFixed(1);
+        if (parseFloat(marketShare) > 50) {
+            insightsHtml += `<li><strong>Thị Phần:</strong> Bạn giữ ${marketShare}% thị phần tổng - vị trí thị trường tích cực.</li>`;
+        } else {
+            insightsHtml += `<li><strong>Thị Phần:</strong> Bạn có ${marketShare}% thị phần. Tập trung vào các trang xếp hạng thấp để tăng thị phần.</li>`;
+        }
+
+        // Insight 7: Recommendations
+        insightsHtml += '<li><strong>Khuyến Nghị Chính:</strong><ul style="margin-top: 8px; margin-left: 20px;">';
+        insightsHtml += '<li>Ưu tiên cải thiện Authority Score cho các trang yếu (AS &lt; 30)</li>';
+        insightsHtml += '<li>Tập trung vào backlink acquisition để tăng Domain Rating</li>';
+        insightsHtml += '<li>Tối ưu hóa từ khóa cho các trang có tiềm năng cao</li>';
+        insightsHtml += '<li>Theo dõi sát sao các đối thủ đang tăng trưởng nhanh</li>';
+        insightsHtml += '<li>Giữ và mở rộng lợi thế của các top performer</li>';
+        insightsHtml += '</ul></li>';
+
+        insightsHtml += '</ul>';
+
+        document.getElementById('insightsSection').innerHTML = insightsHtml;
+    </script>
+</body>
+</html>

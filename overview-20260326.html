@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Cáo Tổng Quan SEO - Semrush Overview | 26/03/2026</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #1a1a2e;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+            padding: 40px 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .date-info {
+            font-size: 1.1em;
+            color: #b0b0b0;
+        }
+
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: #16213e;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 5px solid #0f9eff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 0.9em;
+            color: #a0a0a0;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .card-value {
+            font-size: 2em;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .group-section {
+            background: #16213e;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 5px solid #0f9eff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .group-title {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #0f9eff;
+            color: #ffffff;
+        }
+
+        .group-sites {
+            color: #c0c0c0;
+            line-height: 1.8;
+            font-size: 0.95em;
+        }
+
+        .chart-container {
+            background: #16213e;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+            height: 400px;
+        }
+
+        .chart-title {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .table-container {
+            background: #16213e;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        thead {
+            background: #0f3460;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            color: #ffffff;
+            font-weight: 600;
+            border-bottom: 2px solid #0f9eff;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #2a3f5f;
+            color: #c0c0c0;
+        }
+
+        tr:hover {
+            background-color: #1f3a52;
+        }
+
+        .group-restaurant {
+            border-left: 4px solid #4CAF50;
+            background-color: rgba(76, 175, 80, 0.05);
+        }
+
+        .group-hotel {
+            border-left: 4px solid #2196F3;
+            background-color: rgba(33, 150, 243, 0.05);
+        }
+
+        .group-competitor {
+            border-left: 4px solid #F44336;
+            background-color: rgba(244, 67, 54, 0.05);
+        }
+
+        .positive {
+            color: #4CAF50;
+            font-weight: 600;
+        }
+
+        .negative {
+            color: #F44336;
+            font-weight: 600;
+        }
+
+        .neutral {
+            color: #FFB300;
+            font-weight: 600;
+        }
+
+        .legend {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #c0c0c0;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+
+        footer {
+            text-align: center;
+            color: #808080;
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #2a3f5f;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .summary-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .chart-container {
+                height: 300px;
+            }
+
+            table {
+                font-size: 0.8em;
+            }
+
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Báo Cáo Tổng Quan SEO - Semrush Overview</h1>
+            <p class="date-info">Ngày: 26/03/2026</p>
+        </header>
+
+        <div class="summary-cards">
+            <div class="card">
+                <div class="card-title">Tổng Số Website</div>
+                <div class="card-value">25</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Tổng Lưu Lượng Hữu Cơ</div>
+                <div class="card-value">29.3M</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Điểm Authority Trung Bình</div>
+                <div class="card-value">41</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Tổng Từ Khóa Xếp Hạng</div>
+                <div class="card-value">43.8M</div>
+            </div>
+        </div>
+
+        <div class="group-section">
+            <div class="group-title">Nhóm Nhà Hàng (13 Website)</div>
+            <div class="group-sites">
+                goto-where.com, menu-world.com, grubbio.com, menustic.com, menufyy.com, gohotelly.com, res-menu.net, restaurants-world.net, wherevi.com, localoria.com, placejoys.com, wherebly.com, foodplacee.com
+            </div>
+        </div>
+
+        <div class="group-section">
+            <div class="group-title">Nhóm Hotel (1 Website)</div>
+            <div class="group-sites">
+                gohotelly.com
+            </div>
+        </div>
+
+        <div class="group-section">
+            <div class="group-title">Nhóm Đối Thủ (12 Website)</div>
+            <div class="group-sites">
+                wheree.com, com-fnb.com, com-place.com, goto-restaurants.com, wanderlog.com, menu-res.com, restaurantmenu.us.com, com-hotel.com, gotoeat.net, restaurants-info.com, hey-restaurants.com, eatat.us
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">So Sánh Authority Score Theo Nhóm</div>
+            <canvas id="authorityChart"></canvas>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #4CAF50;"></div>
+                    <span>Nhà Hàng</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #2196F3;"></div>
+                    <span>Hotel</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #F44336;"></div>
+                    <span>Đối Thủ</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-title">So Sánh Lưu Lượng Hữu Cơ Theo Nhóm</div>
+            <canvas id="trafficChart"></canvas>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #4CAF50;"></div>
+                    <span>Nhà Hàng</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #2196F3;"></div>
+                    <span>Hotel</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #F44336;"></div>
+                    <span>Đối Thủ</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <div class="chart-title">Bảng Dữ Liệu Chi Tiết</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Domain</th>
+                        <th>Nhóm</th>
+                        <th>Authority Score</th>
+                        <th>Lưu Lượng Hữu Cơ</th>
+                        <th>Thay Đổi Traffic %</th>
+                        <th>Referring Domains</th>
+                        <th>Traffic Share %</th>
+                        <th>Từ Khóa Xếp Hạng</th>
+                        <th>Thay Đổi Keywords %</th>
+                        <th>Backlinks</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTable">
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>Báo cáo được tạo vào 26/03/2026 | Dữ liệu từ Semrush</p>
+        </footer>
+    </div>
+
+    <script>
+        const data = [{"domain": "goto-where.com", "group": "Nhà hàng", "as": 50, "traffic": 1000000, "traffic_pct": 31, "paid_traffic": 0, "ref_domains": 3400, "traffic_share": 28, "keywords": 902800, "kw_pct": 10, "paid_kw": 0, "backlinks": 77000}, {"domain": "menu-world.com", "group": "Nhà hàng", "as": 57, "traffic": 1900000, "traffic_pct": 5.7, "paid_traffic": 0, "ref_domains": 4200, "traffic_share": 32, "keywords": 1900000, "kw_pct": 2.1, "paid_kw": 0, "backlinks": 111500}, {"domain": "grubbio.com", "group": "Nhà hàng", "as": 34, "traffic": 91100, "traffic_pct": 5.4, "paid_traffic": 0, "ref_domains": 1600, "traffic_share": 82, "keywords": 50400, "kw_pct": 26, "paid_kw": 0, "backlinks": 17600}, {"domain": "menustic.com", "group": "Nhà hàng", "as": 40, "traffic": 253200, "traffic_pct": 25, "paid_traffic": 0, "ref_domains": 1600, "traffic_share": 26, "keywords": 81000, "kw_pct": 34, "paid_kw": 0, "backlinks": 18900}, {"domain": "menufyy.com", "group": "Nhà hàng", "as": 40, "traffic": 282900, "traffic_pct": 98, "paid_traffic": 5, "ref_domains": 2400, "traffic_share": 6, "keywords": 152000, "kw_pct": 85, "paid_kw": 4, "backlinks": 76000}, {"domain": "gohotelly.com", "group": "Nhà hàng / Hotel", "as": 20, "traffic": 13500, "traffic_pct": 23, "paid_traffic": 0, "ref_domains": 277, "traffic_share": 19, "keywords": 4200, "kw_pct": 53, "paid_kw": 0, "backlinks": 1900}, {"domain": "res-menu.net", "group": "Nhà hàng", "as": 51, "traffic": 741400, "traffic_pct": 26, "paid_traffic": 0, "ref_domains": 3200, "traffic_share": 33, "keywords": 1100000, "kw_pct": 40, "paid_kw": 0, "backlinks": 164600}, {"domain": "restaurants-world.net", "group": "Nhà hàng", "as": 51, "traffic": 740500, "traffic_pct": 7.2, "paid_traffic": 0, "ref_domains": 2700, "traffic_share": 31, "keywords": 834000, "kw_pct": 19, "paid_kw": 0, "backlinks": 87800}, {"domain": "wherevi.com", "group": "Nhà hàng", "as": 33, "traffic": 106100, "traffic_pct": 1.4, "paid_traffic": 0, "ref_domains": 534, "traffic_share": 6, "keywords": 70600, "kw_pct": -7.3, "paid_kw": 0, "backlinks": 7200}, {"domain": "localoria.com", "group": "Nhà hàng", "as": 26, "traffic": 29500, "traffic_pct": 22, "paid_traffic": 0, "ref_domains": 1200, "traffic_share": 31, "keywords": 16500, "kw_pct": 51, "paid_kw": 0, "backlinks": 22100}, {"domain": "placejoys.com", "group": "Nhà hàng", "as": 41, "traffic": 315100, "traffic_pct": 104, "paid_traffic": 0, "ref_domains": 3000, "traffic_share": 13, "keywords": 106200, "kw_pct": 172, "paid_kw": 0, "backlinks": 72300}, {"domain": "wherebly.com", "group": "Nhà hàng", "as": 0, "traffic": 3200, "traffic_pct": 15357, "paid_traffic": 0, "ref_domains": 43, "traffic_share": 6, "keywords": 210, "kw_pct": 5150, "paid_kw": 0, "backlinks": 129}, {"domain": "foodplacee.com", "group": "Nhà hàng", "as": 0, "traffic": 1200, "traffic_pct": 100, "paid_traffic": 0, "ref_domains": 46, "traffic_share": 14, "keywords": 336, "kw_pct": 33500, "paid_kw": 0, "backlinks": 86}, {"domain": "wheree.com", "group": "Đối thủ", "as": 69, "traffic": 11100000, "traffic_pct": -6.7, "paid_traffic": 0, "ref_domains": 7100, "traffic_share": 6, "keywords": 25100000, "kw_pct": 1.3, "paid_kw": 0, "backlinks": 274600}, {"domain": "com-fnb.com", "group": "Đối thủ", "as": 28, "traffic": 3900, "traffic_pct": -67, "paid_traffic": 0, "ref_domains": 480, "traffic_share": 1, "keywords": 49400, "kw_pct": -67, "paid_kw": 0, "backlinks": 1200}, {"domain": "com-place.com", "group": "Đối thủ", "as": 50, "traffic": 1300000, "traffic_pct": 11, "paid_traffic": 0, "ref_domains": 1600, "traffic_share": 36, "keywords": 717500, "kw_pct": 6.6, "paid_kw": 0, "backlinks": 8700}, {"domain": "goto-restaurants.com", "group": "Đối thủ", "as": 46, "traffic": 418600, "traffic_pct": 19, "paid_traffic": 0, "ref_domains": 1700, "traffic_share": 17, "keywords": 469900, "kw_pct": 17, "paid_kw": 0, "backlinks": 16400}, {"domain": "wanderlog.com", "group": "Đối thủ", "as": 81, "traffic": 12400000, "traffic_pct": -6.6, "paid_traffic": 1, "ref_domains": 29500, "traffic_share": 7, "keywords": 12300000, "kw_pct": -15, "paid_kw": 1, "backlinks": 22800000}, {"domain": "menu-res.com", "group": "Đối thủ", "as": 34, "traffic": 311900, "traffic_pct": 45, "paid_traffic": 0, "ref_domains": 670, "traffic_share": 11, "keywords": 220200, "kw_pct": 22, "paid_kw": 0, "backlinks": 4500}, {"domain": "restaurantmenu.us.com", "group": "Đối thủ", "as": 15, "traffic": 38100, "traffic_pct": 17, "paid_traffic": 0, "ref_domains": 200, "traffic_share": 17, "keywords": 27800, "kw_pct": 14, "paid_kw": 0, "backlinks": 834}, {"domain": "com-hotel.com", "group": "Đối thủ", "as": 59, "traffic": 1700000, "traffic_pct": 2.9, "paid_traffic": 0, "ref_domains": 7100, "traffic_share": 24, "keywords": 698200, "kw_pct": -7.6, "paid_kw": 0, "backlinks": 110100}, {"domain": "gotoeat.net", "group": "Đối thủ", "as": 33, "traffic": 114400, "traffic_pct": 60, "paid_traffic": 0, "ref_domains": 526, "traffic_share": 3, "keywords": 101300, "kw_pct": 53, "paid_kw": 0, "backlinks": 3600}, {"domain": "restaurants-info.com", "group": "Đối thủ", "as": 38, "traffic": 173800, "traffic_pct": 43, "paid_traffic": 0, "ref_domains": 605, "traffic_share": 3, "keywords": 144500, "kw_pct": 26, "paid_kw": 0, "backlinks": 4200}, {"domain": "hey-restaurants.com", "group": "Đối thủ", "as": 38, "traffic": 120600, "traffic_pct": 45, "paid_traffic": 0, "ref_domains": 575, "traffic_share": 7, "keywords": 168000, "kw_pct": 30, "paid_kw": 0, "backlinks": 4400}, {"domain": "eatat.us", "group": "Đối thủ", "as": 24, "traffic": 21100, "traffic_pct": 41, "paid_traffic": 0, "ref_domains": 83, "traffic_share": 84, "keywords": 2800, "kw_pct": 6, "paid_kw": 0, "backlinks": 387}];
+
+        function formatNumber(num) {
+            if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+            if (num >= 1000) return (num / 1000).toFixed(0) + 'K';
+            return num.toString();
+        }
+
+        function getGroupColor(group) {
+            if (group.includes('Nhà hàng')) return '#4CAF50';
+            if (group.includes('Hotel')) return '#2196F3';
+            return '#F44336';
+        }
+
+        function getGroupClass(group) {
+            if (group.includes('Nhà hàng')) return 'group-restaurant';
+            if (group.includes('Hotel')) return 'group-hotel';
+            return 'group-competitor';
+        }
+
+        // Populate data table
+        const tbody = document.getElementById('dataTable');
+        data.forEach(item => {
+            const row = document.createElement('tr');
+            row.className = getGroupClass(item.group);
+
+            const trafficChangeClass = item.traffic_pct >= 0 ? 'positive' : 'negative';
+            const kwChangeClass = item.kw_pct >= 0 ? 'positive' : 'negative';
+
+            row.innerHTML = `
+                <td>${item.domain}</td>
+                <td>${item.group}</td>
+                <td>${item.as}</td>
+                <td>${formatNumber(item.traffic)}</td>
+                <td class="${trafficChangeClass}">${item.traffic_pct >= 0 ? '+' : ''}${item.traffic_pct}%</td>
+                <td>${formatNumber(item.ref_domains)}</td>
+                <td>${item.traffic_share}%</td>
+                <td>${formatNumber(item.keywords)}</td>
+                <td class="${kwChangeClass}">${item.kw_pct >= 0 ? '+' : ''}${item.kw_pct}%</td>
+                <td>${formatNumber(item.backlinks)}</td>
+            `;
+            tbody.appendChild(row);
+        });
+
+        // Authority Score Chart
+        const authorityCtx = document.getElementById('authorityChart').getContext('2d');
+        const authorityLabels = data.map(d => d.domain);
+        const authorityValues = data.map(d => d.as);
+        const authorityColors = data.map(d => getGroupColor(d.group));
+
+        new Chart(authorityCtx, {
+            type: 'bar',
+            data: {
+                labels: authorityLabels,
+                datasets: [{
+                    label: 'Authority Score',
+                    data: authorityValues,
+                    backgroundColor: authorityColors,
+                    borderColor: authorityColors,
+                    borderWidth: 1,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: '#ffffff',
+                        bodyColor: '#e0e0e0',
+                        borderColor: '#0f9eff',
+                        borderWidth: 1,
+                        callbacks: {
+                            label: function(context) {
+                                return 'AS: ' + context.parsed.x;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: '#a0a0a0'
+                        },
+                        grid: {
+                            color: '#2a3f5f'
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            color: '#a0a0a0',
+                            font: {
+                                size: 10
+                            }
+                        },
+                        grid: {
+                            color: '#2a3f5f'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Traffic Chart
+        const trafficCtx = document.getElementById('trafficChart').getContext('2d');
+        const trafficLabels = data.map(d => d.domain);
+        const trafficValues = data.map(d => d.traffic / 1000000); // Convert to millions for better visualization
+        const trafficColors = data.map(d => getGroupColor(d.group));
+
+        new Chart(trafficCtx, {
+            type: 'bar',
+            data: {
+                labels: trafficLabels,
+                datasets: [{
+                    label: 'Organic Traffic (Millions)',
+                    data: trafficValues,
+                    backgroundColor: trafficColors,
+                    borderColor: trafficColors,
+                    borderWidth: 1,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                indexAxis: 'y',
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: '#ffffff',
+                        bodyColor: '#e0e0e0',
+                        borderColor: '#0f9eff',
+                        borderWidth: 1,
+                        callbacks: {
+                            label: function(context) {
+                                return 'Traffic: ' + context.parsed.x.toFixed(2) + 'M';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: '#a0a0a0'
+                        },
+                        grid: {
+                            color: '#2a3f5f'
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            color: '#a0a0a0',
+                            font: {
+                                size: 10
+                            }
+                        },
+                        grid: {
+                            color: '#2a3f5f'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
