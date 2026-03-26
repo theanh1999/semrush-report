@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semrush Domain Overview - 26/03/2026</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#0f0f23;color:#e0e0e0;font-family:'Segoe UI',Arial,sans-serif;padding:20px;}
+.container{max-width:1400px;margin:0 auto;}
+h1{text-align:center;font-size:28px;margin-bottom:5px;background:linear-gradient(135deg,#60a5fa,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.subtitle{text-align:center;color:#8888aa;margin-bottom:30px;font-size:14px;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-bottom:30px;}
+.card{background:#1a1a2e;border-radius:12px;padding:20px;border:1px solid #2a2a4a;}
+.card h3{font-size:13px;color:#8888aa;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;}
+.card .value{font-size:28px;font-weight:700;}
+.card .detail{font-size:12px;color:#6b7280;margin-top:6px;}
+.chart-container{background:#1a1a2e;border-radius:12px;padding:20px;border:1px solid #2a2a4a;margin-bottom:20px;}
+.chart-title{font-size:16px;font-weight:600;margin-bottom:15px;color:#c0c0d0;}
+table{width:100%;border-collapse:collapse;background:#1a1a2e;border-radius:12px;overflow:hidden;}
+th{background:#16213e;padding:12px 10px;text-align:left;font-size:12px;color:#8888aa;text-transform:uppercase;letter-spacing:0.5px;position:sticky;top:0;}
+td{font-size:13px;}
+.legend{display:flex;gap:20px;justify-content:center;margin:15px 0;flex-wrap:wrap;}
+.legend span{display:flex;align-items:center;gap:6px;font-size:13px;color:#8888aa;}
+.legend .dot{width:12px;height:12px;border-radius:50%;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>📊 Báo Cáo Tổng Quan Semrush Domain Overview</h1>
+<p class="subtitle">Ngày 26/03/2026 | Dữ liệu từ Semrush API (US Database) | 25 websites - 3 nhóm</p>
+
+<div class="legend">
+<span><span class="dot" style="background:#22c55e;"></span>Nhà hàng (13 sites)</span>
+<span><span class="dot" style="background:#3b82f6;"></span>Hotel (1 site)</span>
+<span><span class="dot" style="background:#ef4444;"></span>Đối thủ (12 sites)</span>
+</div>
+
+<div class="cards">
+<div class="card">
+<h3>🏠 Nhà hàng - Tổng Traffic</h3>
+<div class="value" style="color:#22c55e;">3,454,839</div>
+<div class="detail">TB Authority Score: 34.1 | Top: menu-world.com (1,245,396)</div>
+</div>
+<div class="card">
+<h3>🏨 Hotel - Tổng Traffic</h3>
+<div class="value" style="color:#3b82f6;">2,166</div>
+<div class="detail">TB Authority Score: 20.0 | gohotelly.com</div>
+</div>
+<div class="card">
+<h3>⚔️ Đối thủ - Tổng Traffic</h3>
+<div class="value" style="color:#ef4444;">7,995,765</div>
+<div class="detail">TB Authority Score: 42.9 | Top: wheree.com (4,162,516)</div>
+</div>
+<div class="card">
+<h3>📈 Tổng Organic Keywords</h3>
+<div class="value" style="color:#a78bfa;">25,608,478</div>
+<div class="detail">Nhà hàng: 3,923,078 | Đối thủ: 21,685,400</div>
+</div>
+<div class="card">
+<h3>🔗 Tổng Backlinks</h3>
+<div class="value" style="color:#fbbf24;">23,884,253</div>
+<div class="detail">Nhà hàng: 657,224 | Đối thủ: 23,227,029</div>
+</div>
+<div class="card">
+<h3>🌐 Tổng Referring Domains</h3>
+<div class="value" style="color:#f472b6;">74,466</div>
+<div class="detail">Nhà hàng: 24,219 | Đối thủ: 50,247</div>
+</div>
+</div>
+
+<div class="chart-container">
+<div class="chart-title">Organic Traffic theo Domain (sắp xếp giảm dần)</div>
+<canvas id="trafficChart" height="120"></canvas>
+</div>
+
+<div class="chart-container">
+<div class="chart-title">Authority Score theo Domain (sắp xếp giảm dần)</div>
+<canvas id="authChart" height="120"></canvas>
+</div>
+
+<div class="chart-container" style="overflow-x:auto;">
+<div class="chart-title">Bảng Dữ Liệu Chi Tiết</div>
+<table>
+<thead><tr>
+<th>#</th><th>Domain</th><th>Nhóm</th><th>Auth Score</th><th>Organic Traffic</th><th>Organic Cost</th><th>Paid Traffic</th><th>Ref Domains</th><th>Organic KW</th><th>Paid KW</th><th>Backlinks</th>
+</tr></thead>
+<tbody><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">1</td>
+<td style="padding:10px;font-weight:600;">wheree.com</td>
+<td style="padding:10px;"><span style="background:rgba(239,68,68,0.15);color:#ef4444;padding:3px 10px;border-radius:12px;font-size:12px;">Đối thủ</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#22c55e;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">69</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">4,162,516</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$1,666,243</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">7,145</td>
+<td style="padding:10px;text-align:right;color:#34d399;">15,041,976</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">274,765</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">2</td>
+<td style="padding:10px;font-weight:600;">wanderlog.com</td>
+<td style="padding:10px;"><span style="background:rgba(239,68,68,0.15);color:#ef4444;padding:3px 10px;border-radius:12px;font-size:12px;">Đối thủ</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#22c55e;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">81</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">1,975,737</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$646,348</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">29,496</td>
+<td style="padding:10px;text-align:right;color:#34d399;">5,155,808</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">22,797,899</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">3</td>
+<td style="padding:10px;font-weight:600;">menu-world.com</td>
+<td style="padding:10px;"><span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#22c55e;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">57</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">1,245,396</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$290,029</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">4,243</td>
+<td style="padding:10px;text-align:right;color:#34d399;">1,377,999</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">111,479</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">4</td>
+<td style="padding:10px;font-weight:600;">com-place.com</td>
+<td style="padding:10px;"><span style="background:rgba(239,68,68,0.15);color:#ef4444;padding:3px 10px;border-radius:12px;font-size:12px;">Đối thủ</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#22c55e;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">50</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">893,154</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$341,568</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">1,583</td>
+<td style="padding:10px;text-align:right;color:#34d399;">490,904</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">8,726</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">5</td>
+<td style="padding:10px;font-weight:600;">restaurants-world.net</td>
+<td style="padding:10px;"><span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#22c55e;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">51</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">660,812</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$170,278</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">2,714</td>
+<td style="padding:10px;text-align:right;color:#34d399;">745,876</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">87,859</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">6</td>
+<td style="padding:10px;font-weight:600;">res-menu.net</td>
+<td style="padding:10px;"><span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#22c55e;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">51</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">598,616</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$121,148</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">3,239</td>
+<td style="padding:10px;text-align:right;color:#34d399;">955,587</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">164,581</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">7</td>
+<td style="padding:10px;font-weight:600;">goto-where.com</td>
+<td style="padding:10px;"><span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#22c55e;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">50</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">457,205</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$100,864</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">3,354</td>
+<td style="padding:10px;text-align:right;color:#34d399;">577,965</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">77,047</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">8</td>
+<td style="padding:10px;font-weight:600;">goto-restaurants.com</td>
+<td style="padding:10px;"><span style="background:rgba(239,68,68,0.15);color:#ef4444;padding:3px 10px;border-radius:12px;font-size:12px;">Đối thủ</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">46</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">358,100</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$66,688</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">1,735</td>
+<td style="padding:10px;text-align:right;color:#34d399;">420,253</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">16,438</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">9</td>
+<td style="padding:10px;font-weight:600;">placejoys.com</td>
+<td style="padding:10px;"><span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">41</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">213,855</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$77,961</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">2,979</td>
+<td style="padding:10px;text-align:right;color:#34d399;">86,461</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">72,341</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">10</td>
+<td style="padding:10px;font-weight:600;">menu-res.com</td>
+<td style="padding:10px;"><span style="background:rgba(239,68,68,0.15);color:#ef4444;padding:3px 10px;border-radius:12px;font-size:12px;">Đối thủ</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">34</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">205,008</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$32,477</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">670</td>
+<td style="padding:10px;text-align:right;color:#34d399;">131,807</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">4,484</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">11</td>
+<td style="padding:10px;font-weight:600;">hey-restaurants.com</td>
+<td style="padding:10px;"><span style="background:rgba(239,68,68,0.15);color:#ef4444;padding:3px 10px;border-radius:12px;font-size:12px;">Đối thủ</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">38</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">100,713</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$15,122</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">575</td>
+<td style="padding:10px;text-align:right;color:#34d399;">146,031</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">4,370</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">12</td>
+<td style="padding:10px;font-weight:600;">com-hotel.com</td>
+<td style="padding:10px;"><span style="background:rgba(239,68,68,0.15);color:#ef4444;padding:3px 10px;border-radius:12px;font-size:12px;">Đối thủ</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#22c55e;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">59</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">93,717</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$90,634</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">7,149</td>
+<td style="padding:10px;text-align:right;color:#34d399;">91,469</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">110,108</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">13</td>
+<td style="padding:10px;font-weight:600;">wherevi.com</td>
+<td style="padding:10px;"><span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">33</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">88,440</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$18,597</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">535</td>
+<td style="padding:10px;text-align:right;color:#34d399;">62,595</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">7,211</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">14</td>
+<td style="padding:10px;font-weight:600;">gotoeat.net</td>
+<td style="padding:10px;"><span style="background:rgba(239,68,68,0.15);color:#ef4444;padding:3px 10px;border-radius:12px;font-size:12px;">Đối thủ</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">33</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">77,427</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$18,233</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">526</td>
+<td style="padding:10px;text-align:right;color:#34d399;">72,160</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">3,585</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">15</td>
+<td style="padding:10px;font-weight:600;">menustic.com</td>
+<td style="padding:10px;"><span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">40</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">72,918</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$19,732</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">1,600</td>
+<td style="padding:10px;text-align:right;color:#34d399;">33,793</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">18,917</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">16</td>
+<td style="padding:10px;font-weight:600;">restaurants-info.com</td>
+<td style="padding:10px;"><span style="background:rgba(239,68,68,0.15);color:#ef4444;padding:3px 10px;border-radius:12px;font-size:12px;">Đối thủ</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">38</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">69,042</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$11,390</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">605</td>
+<td style="padding:10px;text-align:right;color:#34d399;">72,009</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">4,235</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">17</td>
+<td style="padding:10px;font-weight:600;">menufyy.com</td>
+<td style="padding:10px;"><span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">40</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">64,747</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$21,716</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">2,377</td>
+<td style="padding:10px;text-align:right;color:#34d399;">48,335</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">76,015</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">18</td>
+<td style="padding:10px;font-weight:600;">restaurantmenu.us.com</td>
+<td style="padding:10px;"><span style="background:rgba(239,68,68,0.15);color:#ef4444;padding:3px 10px;border-radius:12px;font-size:12px;">Đối thủ</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">15</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">36,974</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$10,299</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">200</td>
+<td style="padding:10px;text-align:right;color:#34d399;">26,229</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">834</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">19</td>
+<td style="padding:10px;font-weight:600;">grubbio.com</td>
+<td style="padding:10px;"><span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#f59e0b;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">34</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">31,878</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$6,585</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">1,573</td>
+<td style="padding:10px;text-align:right;color:#34d399;">21,773</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">17,564</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">20</td>
+<td style="padding:10px;font-weight:600;">eatat.us</td>
+<td style="padding:10px;"><span style="background:rgba(239,68,68,0.15);color:#ef4444;padding:3px 10px;border-radius:12px;font-size:12px;">Đối thủ</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">24</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">20,980</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$3,792</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">83</td>
+<td style="padding:10px;text-align:right;color:#34d399;">2,668</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">387</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">21</td>
+<td style="padding:10px;font-weight:600;">localoria.com</td>
+<td style="padding:10px;"><span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">26</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">17,882</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$4,829</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">1,239</td>
+<td style="padding:10px;text-align:right;color:#34d399;">10,664</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">22,141</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">22</td>
+<td style="padding:10px;font-weight:600;">com-fnb.com</td>
+<td style="padding:10px;"><span style="background:rgba(239,68,68,0.15);color:#ef4444;padding:3px 10px;border-radius:12px;font-size:12px;">Đối thủ</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">28</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">2,397</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$88</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">480</td>
+<td style="padding:10px;text-align:right;color:#34d399;">34,086</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">1,198</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">23</td>
+<td style="padding:10px;font-weight:600;">gohotelly.com</td>
+<td style="padding:10px;"><span style="background:rgba(59,130,246,0.15);color:#3b82f6;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng, Hotel</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">20</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">2,166</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$1,665</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">277</td>
+<td style="padding:10px;text-align:right;color:#34d399;">1,824</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">1,853</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">24</td>
+<td style="padding:10px;font-weight:600;">foodplacee.com</td>
+<td style="padding:10px;"><span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">0</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">701</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$220</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">46</td>
+<td style="padding:10px;text-align:right;color:#34d399;">183</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">87</td>
+</tr><tr style="border-bottom:1px solid #2a2a4a;">
+<td style="padding:10px;text-align:center;color:#8888aa;">25</td>
+<td style="padding:10px;font-weight:600;">wherebly.com</td>
+<td style="padding:10px;"><span style="background:rgba(34,197,94,0.15);color:#22c55e;padding:3px 10px;border-radius:12px;font-size:12px;">Nhà hàng</span></td>
+<td style="padding:10px;text-align:center;"><span style="background:#ef4444;color:#fff;padding:2px 8px;border-radius:8px;font-weight:700;">0</span></td>
+<td style="padding:10px;text-align:right;font-weight:600;color:#60a5fa;">223</td>
+<td style="padding:10px;text-align:right;color:#a78bfa;">$65</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#f472b6;">43</td>
+<td style="padding:10px;text-align:right;color:#34d399;">23</td>
+<td style="padding:10px;text-align:right;">0</td>
+<td style="padding:10px;text-align:right;color:#fbbf24;">129</td>
+</tr></tbody>
+</table>
+</div>
+
+<p style="text-align:center;color:#4a4a6a;font-size:12px;margin-top:20px;">Generated by Bot AI | 26/03/2026 | Data source: Semrush API</p>
+</div>
+
+<script>
+const trafficCtx = document.getElementById('trafficChart').getContext('2d');
+new Chart(trafficCtx, {
+    type: 'bar',
+    data: {
+        labels: ["wheree.com", "wanderlog.com", "menu-world.com", "com-place.com", "restaurants-world.net", "res-menu.net", "goto-where.com", "goto-restaurants.com", "placejoys.com", "menu-res.com", "hey-restaurants.com", "com-hotel.com", "wherevi.com", "gotoeat.net", "menustic.com", "restaurants-info.com", "menufyy.com", "restaurantmenu.us.com", "grubbio.com", "eatat.us", "localoria.com", "com-fnb.com", "gohotelly.com", "foodplacee.com", "wherebly.com"],
+        datasets: [{
+            label: 'Organic Traffic',
+            data: [4162516, 1975737, 1245396, 893154, 660812, 598616, 457205, 358100, 213855, 205008, 100713, 93717, 88440, 77427, 72918, 69042, 64747, 36974, 31878, 20980, 17882, 2397, 2166, 701, 223],
+            backgroundColor: ["#ef4444", "#ef4444", "#22c55e", "#ef4444", "#22c55e", "#22c55e", "#22c55e", "#ef4444", "#22c55e", "#ef4444", "#ef4444", "#ef4444", "#22c55e", "#ef4444", "#22c55e", "#ef4444", "#22c55e", "#ef4444", "#22c55e", "#ef4444", "#22c55e", "#ef4444", "#3b82f6", "#22c55e", "#22c55e"],
+            borderRadius: 4,
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {display: false},
+            tooltip: {callbacks: {label: ctx => ctx.raw.toLocaleString()}}
+        },
+        scales: {
+            y: {ticks: {color:'#8888aa',callback:v=>v>=1e6?(v/1e6)+'M':v>=1e3?(v/1e3)+'K':v},grid:{color:'#2a2a4a'}},
+            x: {ticks: {color:'#8888aa',maxRotation:45,minRotation:45,font:{size:10}},grid:{display:false}}
+        }
+    }
+});
+
+const authCtx = document.getElementById('authChart').getContext('2d');
+new Chart(authCtx, {
+    type: 'bar',
+    data: {
+        labels: ["wanderlog.com", "wheree.com", "com-hotel.com", "menu-world.com", "res-menu.net", "restaurants-world.net", "goto-where.com", "com-place.com", "goto-restaurants.com", "placejoys.com", "menustic.com", "menufyy.com", "restaurants-info.com", "hey-restaurants.com", "grubbio.com", "menu-res.com", "wherevi.com", "gotoeat.net", "com-fnb.com", "localoria.com", "eatat.us", "gohotelly.com", "restaurantmenu.us.com", "wherebly.com", "foodplacee.com"],
+        datasets: [{
+            label: 'Authority Score',
+            data: [81, 69, 59, 57, 51, 51, 50, 50, 46, 41, 40, 40, 38, 38, 34, 34, 33, 33, 28, 26, 24, 20, 15, 0, 0],
+            backgroundColor: ["#ef4444", "#ef4444", "#ef4444", "#22c55e", "#22c55e", "#22c55e", "#22c55e", "#ef4444", "#ef4444", "#22c55e", "#22c55e", "#22c55e", "#ef4444", "#ef4444", "#22c55e", "#ef4444", "#22c55e", "#ef4444", "#ef4444", "#22c55e", "#ef4444", "#3b82f6", "#ef4444", "#22c55e", "#22c55e"],
+            borderRadius: 4,
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {legend: {display: false}},
+        scales: {
+            y: {max:100,ticks:{color:'#8888aa'},grid:{color:'#2a2a4a'}},
+            x: {ticks:{color:'#8888aa',maxRotation:45,minRotation:45,font:{size:10}},grid:{display:false}}
+        }
+    }
+});
+</script>
+</body>
+</html>
