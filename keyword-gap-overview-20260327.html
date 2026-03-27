@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keyword Gap Overview - 2026-03-27</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #1a1a2e; color: #e0e0e0; font-family: 'Segoe UI', sans-serif; padding: 20px; }
+.container { max-width: 1400px; margin: 0 auto; }
+h1 { color: #00d4ff; text-align: center; margin-bottom: 10px; font-size: 28px; }
+.subtitle { text-align: center; color: #888; margin-bottom: 30px; }
+.stats-bar { display: flex; gap: 20px; justify-content: center; margin-bottom: 30px; flex-wrap: wrap; }
+.stat-card { background: #16213e; padding: 20px 30px; border-radius: 12px; text-align: center; min-width: 180px; }
+.stat-card .value { font-size: 32px; font-weight: bold; color: #00d4ff; }
+.stat-card .label { color: #888; margin-top: 5px; }
+.section { background: #16213e; border-radius: 12px; padding: 25px; margin-bottom: 25px; }
+.section h2 { color: #00d4ff; margin-bottom: 15px; font-size: 20px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { background: #0f3460; color: #00d4ff; padding: 12px 8px; text-align: left; position: sticky; top: 0; cursor: pointer; }
+th:hover { background: #1a4a8a; }
+td { padding: 10px 8px; border-bottom: 1px solid #2a2a4a; }
+tr:hover { background: #1a2a4e; }
+.num { text-align: right; font-family: monospace; }
+.badge { padding: 3px 10px; border-radius: 12px; font-size: 12px; }
+.badge-nha-hang { background: #e74c3c33; color: #e74c3c; }
+.badge-hotel { background: #f39c1233; color: #f39c12; }
+.badge-doi-thu { background: #3498db33; color: #3498db; }
+.chart-container { position: relative; height: 400px; margin: 20px 0; }
+.charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+@media (max-width: 900px) { .charts-grid { grid-template-columns: 1fr; } }
+footer { text-align: center; color: #666; margin-top: 30px; padding: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Keyword Gap Overview - Semrush</h1>
+<p class="subtitle">Position Top 20 | 10 doi thu/domain | Ngay: 2026-03-27</p>
+
+<div class="stats-bar">
+    <div class="stat-card"><div class="value">19</div><div class="label">Domains</div></div>
+    <div class="stat-card"><div class="value">190</div><div class="label">So sanh</div></div>
+    <div class="stat-card"><div class="value">16.3M</div><div class="label">Tong Shared</div></div>
+    <div class="stat-card"><div class="value">0</div><div class="label">Tong Missing</div></div>
+</div>
+
+<div class="section">
+<h2>Bang tong hop tat ca domain</h2>
+<div style="overflow-x:auto;">
+<table id="mainTable">
+<thead><tr>
+    <th onclick="sortTable(0)">Domain</th>
+    <th onclick="sortTable(1)">Nhom</th>
+    <th onclick="sortTable(2)">Doi thu</th>
+    <th onclick="sortTable(3)">Shared</th>
+    <th onclick="sortTable(4)">Missing</th>
+    <th onclick="sortTable(5)">Weak</th>
+    <th onclick="sortTable(6)">Strong</th>
+    <th onclick="sortTable(7)">Untapped</th>
+    <th onclick="sortTable(8)">Unique</th>
+    <th onclick="sortTable(9)">All</th>
+</tr></thead>
+<tbody><tr>
+            <td>com-fnb.com</td>
+            <td><span class="badge badge-đối-thu">Đối thủ</span></td>
+            <td>10</td>
+            <td class="num">158</td>
+            <td class="num">0</td>
+            <td class="num">137</td>
+            <td class="num">21</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">158</td>
+        </tr><tr>
+            <td>com-place.com</td>
+            <td><span class="badge badge-đối-thu">Đối thủ</span></td>
+            <td>10</td>
+            <td class="num">185.5K</td>
+            <td class="num">0</td>
+            <td class="num">45.8K</td>
+            <td class="num">139.9K</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">185.5K</td>
+        </tr><tr>
+            <td>foodplacee.com</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">10</td>
+            <td class="num">0</td>
+            <td class="num">8</td>
+            <td class="num">2</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">10</td>
+        </tr><tr>
+            <td>gohotelly.com</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">173</td>
+            <td class="num">0</td>
+            <td class="num">47</td>
+            <td class="num">126</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">173</td>
+        </tr><tr>
+            <td>goto-restaurants.com</td>
+            <td><span class="badge badge-đối-thu">Đối thủ</span></td>
+            <td>10</td>
+            <td class="num">129.4K</td>
+            <td class="num">0</td>
+            <td class="num">45.5K</td>
+            <td class="num">83.9K</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">129.4K</td>
+        </tr><tr>
+            <td>goto-where.com</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">242.5K</td>
+            <td class="num">0</td>
+            <td class="num">114.3K</td>
+            <td class="num">127.9K</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">242.5K</td>
+        </tr><tr>
+            <td>grubbio.com</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">9</td>
+            <td class="num">0</td>
+            <td class="num">9</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">9</td>
+        </tr><tr>
+            <td>localoria.com</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">98</td>
+            <td class="num">0</td>
+            <td class="num">59</td>
+            <td class="num">39</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">98</td>
+        </tr><tr>
+            <td>menu-res.com</td>
+            <td><span class="badge badge-đối-thu">Đối thủ</span></td>
+            <td>10</td>
+            <td class="num">31.3K</td>
+            <td class="num">0</td>
+            <td class="num">12.1K</td>
+            <td class="num">19.3K</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">31.3K</td>
+        </tr><tr>
+            <td>menu-world.com</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">489.9K</td>
+            <td class="num">0</td>
+            <td class="num">242.5K</td>
+            <td class="num">247.5K</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">489.9K</td>
+        </tr><tr>
+            <td>menufyy.com</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">7.0K</td>
+            <td class="num">0</td>
+            <td class="num">1.2K</td>
+            <td class="num">5.8K</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">7.0K</td>
+        </tr><tr>
+            <td>menustic.com</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">1.3K</td>
+            <td class="num">0</td>
+            <td class="num">196</td>
+            <td class="num">1.1K</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">1.3K</td>
+        </tr><tr>
+            <td>placejoys.com</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">18.5K</td>
+            <td class="num">0</td>
+            <td class="num">5.3K</td>
+            <td class="num">13.1K</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">18.5K</td>
+        </tr><tr>
+            <td>res-menu.net</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">224.5K</td>
+            <td class="num">0</td>
+            <td class="num">94.2K</td>
+            <td class="num">130.3K</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">224.5K</td>
+        </tr><tr>
+            <td>restaurants-world.net</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">196.8K</td>
+            <td class="num">0</td>
+            <td class="num">85.9K</td>
+            <td class="num">110.9K</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">196.8K</td>
+        </tr><tr>
+            <td>wanderlog.com</td>
+            <td><span class="badge badge-đối-thu">Đối thủ</span></td>
+            <td>10</td>
+            <td class="num">2.3M</td>
+            <td class="num">0</td>
+            <td class="num">1.7M</td>
+            <td class="num">541.0K</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">2.3M</td>
+        </tr><tr>
+            <td>wherebly.com</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">9</td>
+            <td class="num">0</td>
+            <td class="num">2</td>
+            <td class="num">7</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">9</td>
+        </tr><tr>
+            <td>wheree.com</td>
+            <td><span class="badge badge-đối-thu">Đối thủ</span></td>
+            <td>10</td>
+            <td class="num">12.5M</td>
+            <td class="num">0</td>
+            <td class="num">10.3M</td>
+            <td class="num">2.3M</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">12.5M</td>
+        </tr><tr>
+            <td>wherevi.com</td>
+            <td><span class="badge badge-nhà-hàng">Nhà hàng</span></td>
+            <td>10</td>
+            <td class="num">9.0K</td>
+            <td class="num">0</td>
+            <td class="num">2.8K</td>
+            <td class="num">6.2K</td>
+            <td class="num">0</td>
+            <td class="num">0</td>
+            <td class="num">9.0K</td>
+        </tr></tbody>
+</table>
+</div>
+</div>
+
+<div class="charts-grid">
+<div class="section">
+    <h2>So sanh Shared Keywords</h2>
+    <div class="chart-container"><canvas id="sharedChart"></canvas></div>
+</div>
+<div class="section">
+    <h2>So sanh Missing Keywords</h2>
+    <div class="chart-container"><canvas id="missingChart"></canvas></div>
+</div>
+</div>
+
+<div class="section">
+    <h2>Shared vs Strong vs Weak</h2>
+    <div class="chart-container"><canvas id="stackedChart"></canvas></div>
+</div>
+
+<div class="section">
+<h2>Top 15 doi thu manh nhat (nhieu Shared keywords)</h2>
+<table>
+<thead><tr><th>Domain goc</th><th>Doi thu</th><th>Shared</th><th>All</th></tr></thead>
+<tbody><tr>
+            <td>wheree.com</td>
+            <td>yelp.com</td>
+            <td class="num">4.0M</td>
+            <td class="num">4.0M</td>
+        </tr><tr>
+            <td>wheree.com</td>
+            <td>mapquest.com</td>
+            <td class="num">3.5M</td>
+            <td class="num">3.5M</td>
+        </tr><tr>
+            <td>wheree.com</td>
+            <td>tripadvisor.com</td>
+            <td class="num">1.6M</td>
+            <td class="num">1.6M</td>
+        </tr><tr>
+            <td>wanderlog.com</td>
+            <td>tripadvisor.com</td>
+            <td class="num">997.8K</td>
+            <td class="num">997.8K</td>
+        </tr><tr>
+            <td>wheree.com</td>
+            <td>waze.com</td>
+            <td class="num">706.3K</td>
+            <td class="num">706.3K</td>
+        </tr><tr>
+            <td>wheree.com</td>
+            <td>nextdoor.com</td>
+            <td class="num">664.4K</td>
+            <td class="num">664.4K</td>
+        </tr><tr>
+            <td>wheree.com</td>
+            <td>doordash.com</td>
+            <td class="num">591.9K</td>
+            <td class="num">591.9K</td>
+        </tr><tr>
+            <td>wheree.com</td>
+            <td>bbb.org</td>
+            <td class="num">582.5K</td>
+            <td class="num">582.5K</td>
+        </tr><tr>
+            <td>wheree.com</td>
+            <td>ubereats.com</td>
+            <td class="num">479.7K</td>
+            <td class="num">479.7K</td>
+        </tr><tr>
+            <td>wanderlog.com</td>
+            <td>wheree.com</td>
+            <td class="num">361.4K</td>
+            <td class="num">361.4K</td>
+        </tr><tr>
+            <td>wheree.com</td>
+            <td>grubhub.com</td>
+            <td class="num">338.9K</td>
+            <td class="num">338.9K</td>
+        </tr><tr>
+            <td>wanderlog.com</td>
+            <td>doordash.com</td>
+            <td class="num">183.8K</td>
+            <td class="num">183.8K</td>
+        </tr><tr>
+            <td>wanderlog.com</td>
+            <td>ubereats.com</td>
+            <td class="num">169.1K</td>
+            <td class="num">169.1K</td>
+        </tr><tr>
+            <td>wanderlog.com</td>
+            <td>opentable.com</td>
+            <td class="num">164.5K</td>
+            <td class="num">164.5K</td>
+        </tr><tr>
+            <td>com-place.com</td>
+            <td>wheree.com</td>
+            <td class="num">102.3K</td>
+            <td class="num">102.3K</td>
+        </tr></tbody>
+</table>
+</div>
+
+<div class="section">
+<h2>Phan tich theo nhom</h2>
+<table>
+<thead><tr><th>Nhom</th><th>So domain</th><th>Tong Shared</th><th>Tong Missing</th><th>Tong Weak</th><th>Tong Strong</th></tr></thead>
+<tbody><tr>
+            <td>Đối thủ</td>
+            <td>6</td>
+            <td class="num">15.1M</td>
+            <td class="num">0</td>
+            <td class="num">12.1M</td>
+            <td class="num">3.0M</td>
+        </tr><tr>
+            <td>Nhà hàng</td>
+            <td>13</td>
+            <td class="num">1.2M</td>
+            <td class="num">0</td>
+            <td class="num">546.5K</td>
+            <td class="num">643.0K</td>
+        </tr></tbody>
+</table>
+</div>
+
+</div>
+
+<footer>
+Bao cao Keyword Gap - Semrush | Position Top 20 | 10 doi thu/domain<br>
+Tao boi Claude AI - 2026-03-27
+</footer>
+
+<script>
+const labels = ["com-fnb.com", "com-place.com", "foodplacee.com", "gohotelly.com", "goto-restaurants.com", "goto-where.com", "grubbio.com", "localoria.com", "menu-res.com", "menu-world.com", "menufyy.com", "menustic.com", "placejoys.com", "res-menu.net", "restaurants-world.net", "wanderlog.com", "wherebly.com", "wheree.com", "wherevi.com"];
+const sharedData = [158, 185500, 10, 173, 129400, 242500, 9, 98, 31317, 489900, 7002, 1315, 18454, 224500, 196800, 2258700, 9, 12465000, 9010];
+const missingData = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+const weakData = [137, 45802, 8, 47, 45479, 114296, 9, 59, 12064, 242500, 1204, 196, 5260, 94200, 85898, 1717400, 2, 10263420, 2788];
+const strongData = [21, 139900, 2, 126, 83900, 127900, 0, 39, 19254, 247500, 5754, 1107, 13122, 130300, 110900, 541000, 7, 2263700, 6241];
+
+Chart.defaults.color = '#e0e0e0';
+Chart.defaults.borderColor = '#2a2a4a';
+
+new Chart(document.getElementById('sharedChart'), {
+    type: 'bar',
+    data: {
+        labels: labels,
+        datasets: [{ label: 'Shared', data: sharedData, backgroundColor: '#3498db' }]
+    },
+    options: { responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { x: { ticks: { maxRotation: 90, minRotation: 45 } } }
+    }
+});
+
+new Chart(document.getElementById('missingChart'), {
+    type: 'bar',
+    data: {
+        labels: labels,
+        datasets: [{ label: 'Missing', data: missingData, backgroundColor: '#e74c3c' }]
+    },
+    options: { responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: { x: { ticks: { maxRotation: 90, minRotation: 45 } } }
+    }
+});
+
+new Chart(document.getElementById('stackedChart'), {
+    type: 'bar',
+    data: {
+        labels: labels,
+        datasets: [
+            { label: 'Shared', data: sharedData, backgroundColor: '#3498db' },
+            { label: 'Strong', data: strongData, backgroundColor: '#2ecc71' },
+            { label: 'Weak', data: weakData, backgroundColor: '#f39c12' }
+        ]
+    },
+    options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { position: 'top' } },
+        scales: {
+            x: { stacked: true, ticks: { maxRotation: 90, minRotation: 45 } },
+            y: { stacked: true }
+        }
+    }
+});
+
+function sortTable(n) {
+    const table = document.getElementById("mainTable");
+    const rows = Array.from(table.tBodies[0].rows);
+    const dir = table.dataset.sortDir === 'asc' ? 'desc' : 'asc';
+    table.dataset.sortDir = dir;
+    rows.sort((a, b) => {
+        let x = a.cells[n].textContent.trim();
+        let y = b.cells[n].textContent.trim();
+        let xn = parseFloat(x.replace(/[KM,]/g, '')) || 0;
+        let yn = parseFloat(y.replace(/[KM,]/g, '')) || 0;
+        if (x.includes('M')) xn *= 1000000;
+        else if (x.includes('K')) xn *= 1000;
+        if (y.includes('M')) yn *= 1000000;
+        else if (y.includes('K')) yn *= 1000;
+        if (xn && yn) return dir === 'asc' ? xn - yn : yn - xn;
+        return dir === 'asc' ? x.localeCompare(y) : y.localeCompare(x);
+    });
+    rows.forEach(r => table.tBodies[0].appendChild(r));
+}
+</script>
+</body>
+</html>

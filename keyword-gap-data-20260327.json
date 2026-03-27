@@ -1,0 +1,2225 @@
+{
+  "goto-where.com": {
+    "collected_at": "2026-03-27T20:51:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "menupix.com",
+        "shared": "25.3K",
+        "missing": "0",
+        "weak": "3.4K",
+        "strong": "21.9K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "25.3K"
+      },
+      {
+        "rank": 2,
+        "domain": "zmenu.com",
+        "shared": "25.1K",
+        "missing": "0",
+        "weak": "4.5K",
+        "strong": "20.6K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "25.1K"
+      },
+      {
+        "rank": 3,
+        "domain": "restaurantguru.com",
+        "shared": "13.2K",
+        "missing": "0",
+        "weak": "996",
+        "strong": "12.2K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "13.2K"
+      },
+      {
+        "rank": 4,
+        "domain": "weeblyte.com",
+        "shared": "15K",
+        "missing": "0",
+        "weak": "7.3K",
+        "strong": "7.7K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "15K"
+      },
+      {
+        "rank": 5,
+        "domain": "singleplatform.com",
+        "shared": "32.1K",
+        "missing": "0",
+        "weak": "17.7K",
+        "strong": "14.4K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "32.1K"
+      },
+      {
+        "rank": 6,
+        "domain": "netwaiter.com",
+        "shared": "11K",
+        "missing": "0",
+        "weak": "3.1K",
+        "strong": "7.8K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "11K"
+      },
+      {
+        "rank": 7,
+        "domain": "goto-restaurants.com",
+        "shared": "9.4K",
+        "missing": "0",
+        "weak": "4.5K",
+        "strong": "4.9K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "9.4K"
+      },
+      {
+        "rank": 8,
+        "domain": "order.online",
+        "shared": "19K",
+        "missing": "0",
+        "weak": "13.8K",
+        "strong": "5.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "19K"
+      },
+      {
+        "rank": 9,
+        "domain": "postmates.com",
+        "shared": "35.9K",
+        "missing": "0",
+        "weak": "21.8K",
+        "strong": "14K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "35.9K"
+      },
+      {
+        "rank": 10,
+        "domain": "ubereats.com",
+        "shared": "56.5K",
+        "missing": "0",
+        "weak": "37.2K",
+        "strong": "19.3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "56.5K"
+      }
+    ]
+  },
+  "menu-world.com": {
+    "collected_at": "2026-03-27T21:01:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "zmenu.com",
+        "shared": "30.9K",
+        "missing": "0",
+        "weak": "2.9K",
+        "strong": "28.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "30.9K"
+      },
+      {
+        "rank": 2,
+        "domain": "singleplatform.com",
+        "shared": "56.2K",
+        "missing": "0",
+        "weak": "23.4K",
+        "strong": "32.8K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "56.2K"
+      },
+      {
+        "rank": 3,
+        "domain": "menupix.com",
+        "shared": "31K",
+        "missing": "0",
+        "weak": "2.2K",
+        "strong": "28.8K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "31K"
+      },
+      {
+        "rank": 4,
+        "domain": "postmates.com",
+        "shared": "64.3K",
+        "missing": "0",
+        "weak": "31.9K",
+        "strong": "32.4K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "64.3K"
+      },
+      {
+        "rank": 5,
+        "domain": "order.online",
+        "shared": "32.8K",
+        "missing": "0",
+        "weak": "19.4K",
+        "strong": "13.3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "32.8K"
+      },
+      {
+        "rank": 6,
+        "domain": "weeblyte.com",
+        "shared": "19.3K",
+        "missing": "0",
+        "weak": "5.1K",
+        "strong": "14.2K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "19.3K"
+      },
+      {
+        "rank": 7,
+        "domain": "grubhub.com",
+        "shared": "74.7K",
+        "missing": "0",
+        "weak": "49.1K",
+        "strong": "25.7K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "74.7K"
+      },
+      {
+        "rank": 8,
+        "domain": "toasttab.com",
+        "shared": "38.4K",
+        "missing": "0",
+        "weak": "26.5K",
+        "strong": "11.9K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "38.4K"
+      },
+      {
+        "rank": 9,
+        "domain": "ubereats.com",
+        "shared": "101.3K",
+        "missing": "0",
+        "weak": "58.2K",
+        "strong": "43.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "101.3K"
+      },
+      {
+        "rank": 10,
+        "domain": "seamless.com",
+        "shared": "41K",
+        "missing": "0",
+        "weak": "23.8K",
+        "strong": "17.2K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "41K"
+      }
+    ]
+  },
+  "grubbio.com": {
+    "collected_at": "2026-03-27T21:09:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "explorebrevard.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 2,
+        "domain": "hotheadburritos.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 3,
+        "domain": "bestofthenorthwest.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 4,
+        "domain": "sctimes.com",
+        "shared": "0",
+        "missing": "0",
+        "weak": "0",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "0"
+      },
+      {
+        "rank": 5,
+        "domain": "archdaily.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 6,
+        "domain": "henrysmexicanrestaurant.cfd",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 7,
+        "domain": "fly.pl",
+        "shared": "0",
+        "missing": "0",
+        "weak": "0",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "0"
+      },
+      {
+        "rank": 8,
+        "domain": "albany.org",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 9,
+        "domain": "pieology.com",
+        "shared": "2",
+        "missing": "0",
+        "weak": "2",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "2"
+      },
+      {
+        "rank": 10,
+        "domain": "elsabordelmangusc.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      }
+    ]
+  },
+  "menustic.com": {
+    "collected_at": "2026-03-27T21:18:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "zmenu.com",
+        "shared": "1.3K",
+        "missing": "0",
+        "weak": "188",
+        "strong": "1.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1.3K"
+      },
+      {
+        "rank": 2,
+        "domain": "hudsonstarobserver.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 3,
+        "domain": "clintonnj.gov",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 4,
+        "domain": "sierra-guisados.square.site",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 5,
+        "domain": "finalbosssour.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 6,
+        "domain": "reuniontoptier.com",
+        "shared": "2",
+        "missing": "0",
+        "weak": "1",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "2"
+      },
+      {
+        "rank": 7,
+        "domain": "greatwallclarksvilletn.com",
+        "shared": "7",
+        "missing": "0",
+        "weak": "4",
+        "strong": "3",
+        "untapped": "0",
+        "unique": "0",
+        "all": "7"
+      },
+      {
+        "rank": 8,
+        "domain": "ttatl.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 9,
+        "domain": "visitkent.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 10,
+        "domain": "blurestaurant.com",
+        "shared": "0",
+        "missing": "0",
+        "weak": "0",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "0"
+      }
+    ]
+  },
+  "menufyy.com": {
+    "collected_at": "2026-03-27T21:27:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "goto-restaurants.com",
+        "shared": "551",
+        "missing": "0",
+        "weak": "205",
+        "strong": "346",
+        "untapped": "0",
+        "unique": "0",
+        "all": "551"
+      },
+      {
+        "rank": 2,
+        "domain": "restaurantji.com",
+        "shared": "416",
+        "missing": "0",
+        "weak": "18",
+        "strong": "398",
+        "untapped": "0",
+        "unique": "0",
+        "all": "416"
+      },
+      {
+        "rank": 3,
+        "domain": "restaurantguru.com",
+        "shared": "1.1K",
+        "missing": "0",
+        "weak": "69",
+        "strong": "1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1.1K"
+      },
+      {
+        "rank": 4,
+        "domain": "menuweb.menu",
+        "shared": "273",
+        "missing": "0",
+        "weak": "69",
+        "strong": "204",
+        "untapped": "0",
+        "unique": "0",
+        "all": "273"
+      },
+      {
+        "rank": 5,
+        "domain": "weeblyte.com",
+        "shared": "962",
+        "missing": "0",
+        "weak": "356",
+        "strong": "606",
+        "untapped": "0",
+        "unique": "0",
+        "all": "962"
+      },
+      {
+        "rank": 6,
+        "domain": "zmenu.com",
+        "shared": "2K",
+        "missing": "0",
+        "weak": "308",
+        "strong": "1.7K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "2K"
+      },
+      {
+        "rank": 7,
+        "domain": "menupix.com",
+        "shared": "1.7K",
+        "missing": "0",
+        "weak": "179",
+        "strong": "1.5K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1.7K"
+      },
+      {
+        "rank": 8,
+        "domain": "menusaz.com",
+        "shared": "0",
+        "missing": "0",
+        "weak": "0",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "0"
+      },
+      {
+        "rank": 9,
+        "domain": "pizzarocklasvegas.com",
+        "shared": "0",
+        "missing": "0",
+        "weak": "0",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "0"
+      },
+      {
+        "rank": 10,
+        "domain": "portroyalwaterfronthomes.com",
+        "shared": "0",
+        "missing": "0",
+        "weak": "0",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "0"
+      }
+    ]
+  },
+  "gohotelly.com": {
+    "collected_at": "2026-03-27T21:35:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "gohotelo.com",
+        "shared": "60",
+        "missing": "0",
+        "weak": "22",
+        "strong": "38",
+        "untapped": "0",
+        "unique": "0",
+        "all": "60"
+      },
+      {
+        "rank": 2,
+        "domain": "momandpopmotels.com",
+        "shared": "21",
+        "missing": "0",
+        "weak": "0",
+        "strong": "21",
+        "untapped": "0",
+        "unique": "0",
+        "all": "21"
+      },
+      {
+        "rank": 3,
+        "domain": "waterwinterwonderland.com",
+        "shared": "16",
+        "missing": "0",
+        "weak": "4",
+        "strong": "12",
+        "untapped": "0",
+        "unique": "0",
+        "all": "16"
+      },
+      {
+        "rank": 4,
+        "domain": "hotel-us.org",
+        "shared": "17",
+        "missing": "0",
+        "weak": "1",
+        "strong": "16",
+        "untapped": "0",
+        "unique": "0",
+        "all": "17"
+      },
+      {
+        "rank": 5,
+        "domain": "hotelsearchusa.com",
+        "shared": "15",
+        "missing": "0",
+        "weak": "6",
+        "strong": "9",
+        "untapped": "0",
+        "unique": "0",
+        "all": "15"
+      },
+      {
+        "rank": 6,
+        "domain": "miami-metropolitan-area.com",
+        "shared": "19",
+        "missing": "0",
+        "weak": "2",
+        "strong": "17",
+        "untapped": "0",
+        "unique": "0",
+        "all": "19"
+      },
+      {
+        "rank": 7,
+        "domain": "tengerszemhotel.com",
+        "shared": "6",
+        "missing": "0",
+        "weak": "0",
+        "strong": "6",
+        "untapped": "0",
+        "unique": "0",
+        "all": "6"
+      },
+      {
+        "rank": 8,
+        "domain": "eastern-sierra.net",
+        "shared": "5",
+        "missing": "0",
+        "weak": "5",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "5"
+      },
+      {
+        "rank": 9,
+        "domain": "limaperuhotels.net",
+        "shared": "8",
+        "missing": "0",
+        "weak": "6",
+        "strong": "2",
+        "untapped": "0",
+        "unique": "0",
+        "all": "8"
+      },
+      {
+        "rank": 10,
+        "domain": "centralparkwesthostel.us",
+        "shared": "6",
+        "missing": "0",
+        "weak": "1",
+        "strong": "5",
+        "untapped": "0",
+        "unique": "0",
+        "all": "6"
+      }
+    ]
+  },
+  "res-menu.net": {
+    "collected_at": "2026-03-27T21:43:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "findmenuworld.com",
+        "shared": "21.4K",
+        "missing": "0",
+        "weak": "7.9K",
+        "strong": "13.5K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "21.4K"
+      },
+      {
+        "rank": 2,
+        "domain": "weeblyte.com",
+        "shared": "21.4K",
+        "missing": "0",
+        "weak": "10.8K",
+        "strong": "10.6K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "21.4K"
+      },
+      {
+        "rank": 3,
+        "domain": "zmenu.com",
+        "shared": "26.7K",
+        "missing": "0",
+        "weak": "3.8K",
+        "strong": "22.9K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "26.7K"
+      },
+      {
+        "rank": 4,
+        "domain": "menupix.com",
+        "shared": "25.8K",
+        "missing": "0",
+        "weak": "3.2K",
+        "strong": "22.6K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "25.8K"
+      },
+      {
+        "rank": 5,
+        "domain": "singleplatform.com",
+        "shared": "42.5K",
+        "missing": "0",
+        "weak": "23.3K",
+        "strong": "19.3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "42.5K"
+      },
+      {
+        "rank": 6,
+        "domain": "goto-restaurants.com",
+        "shared": "11.9K",
+        "missing": "0",
+        "weak": "6.1K",
+        "strong": "5.8K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "11.9K"
+      },
+      {
+        "rank": 7,
+        "domain": "restaurantguru.com",
+        "shared": "12.8K",
+        "missing": "0",
+        "weak": "1.2K",
+        "strong": "11.5K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "12.8K"
+      },
+      {
+        "rank": 8,
+        "domain": "netwaiter.com",
+        "shared": "13.3K",
+        "missing": "0",
+        "weak": "4.6K",
+        "strong": "8.7K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "13.3K"
+      },
+      {
+        "rank": 9,
+        "domain": "order.online",
+        "shared": "21.5K",
+        "missing": "0",
+        "weak": "15.2K",
+        "strong": "6.3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "21.5K"
+      },
+      {
+        "rank": 10,
+        "domain": "seamless.com",
+        "shared": "27.2K",
+        "missing": "0",
+        "weak": "18.1K",
+        "strong": "9.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "27.2K"
+      }
+    ]
+  },
+  "restaurants-world.net": {
+    "collected_at": "2026-03-27T21:49:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "weeblyte.com",
+        "shared": "18.4K",
+        "missing": "0",
+        "weak": "8.2K",
+        "strong": "10.3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "18.4K"
+      },
+      {
+        "rank": 2,
+        "domain": "zmenu.com",
+        "shared": "20.4K",
+        "missing": "0",
+        "weak": "3.2K",
+        "strong": "17.2K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "20.4K"
+      },
+      {
+        "rank": 3,
+        "domain": "goto-restaurants.com",
+        "shared": "10.3K",
+        "missing": "0",
+        "weak": "4.9K",
+        "strong": "5.4K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "10.3K"
+      },
+      {
+        "rank": 4,
+        "domain": "menupix.com",
+        "shared": "18.8K",
+        "missing": "0",
+        "weak": "2.4K",
+        "strong": "16.4K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "18.8K"
+      },
+      {
+        "rank": 5,
+        "domain": "singleplatform.com",
+        "shared": "32.2K",
+        "missing": "0",
+        "weak": "16.5K",
+        "strong": "15.8K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "32.2K"
+      },
+      {
+        "rank": 6,
+        "domain": "netwaiter.com",
+        "shared": "11.5K",
+        "missing": "0",
+        "weak": "3.3K",
+        "strong": "8.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "11.5K"
+      },
+      {
+        "rank": 7,
+        "domain": "order.online",
+        "shared": "17.7K",
+        "missing": "0",
+        "weak": "12.1K",
+        "strong": "5.5K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "17.7K"
+      },
+      {
+        "rank": 8,
+        "domain": "restaurantguru.com",
+        "shared": "9.5K",
+        "missing": "0",
+        "weak": "898",
+        "strong": "8.6K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "9.5K"
+      },
+      {
+        "rank": 9,
+        "domain": "postmates.com",
+        "shared": "35.2K",
+        "missing": "0",
+        "weak": "20.2K",
+        "strong": "15K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "35.2K"
+      },
+      {
+        "rank": 10,
+        "domain": "seamless.com",
+        "shared": "22.8K",
+        "missing": "0",
+        "weak": "14.2K",
+        "strong": "8.6K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "22.8K"
+      }
+    ]
+  },
+  "wherevi.com": {
+    "collected_at": "2026-03-27T22:17:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "menu-res.com",
+        "shared": "501",
+        "missing": "0",
+        "weak": "305",
+        "strong": "196",
+        "untapped": "0",
+        "unique": "0",
+        "all": "501"
+      },
+      {
+        "rank": 2,
+        "domain": "weeblyte.com",
+        "shared": "2.5K",
+        "missing": "0",
+        "weak": "999",
+        "strong": "1.5K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "2.5K"
+      },
+      {
+        "rank": 3,
+        "domain": "goto-restaurants.com",
+        "shared": "1.2K",
+        "missing": "0",
+        "weak": "569",
+        "strong": "679",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1.2K"
+      },
+      {
+        "rank": 4,
+        "domain": "foodboss.com",
+        "shared": "103",
+        "missing": "0",
+        "weak": "17",
+        "strong": "86",
+        "untapped": "0",
+        "unique": "0",
+        "all": "103"
+      },
+      {
+        "rank": 5,
+        "domain": "zmenu.com",
+        "shared": "2.5K",
+        "missing": "0",
+        "weak": "372",
+        "strong": "2.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "2.5K"
+      },
+      {
+        "rank": 6,
+        "domain": "allmenus.com",
+        "shared": "137",
+        "missing": "0",
+        "weak": "26",
+        "strong": "111",
+        "untapped": "0",
+        "unique": "0",
+        "all": "137"
+      },
+      {
+        "rank": 7,
+        "domain": "restaurantguru.com",
+        "shared": "920",
+        "missing": "0",
+        "weak": "60",
+        "strong": "860",
+        "untapped": "0",
+        "unique": "0",
+        "all": "920"
+      },
+      {
+        "rank": 8,
+        "domain": "restaurants-us.com",
+        "shared": "340",
+        "missing": "0",
+        "weak": "140",
+        "strong": "200",
+        "untapped": "0",
+        "unique": "0",
+        "all": "340"
+      },
+      {
+        "rank": 9,
+        "domain": "menuweb.menu",
+        "shared": "439",
+        "missing": "0",
+        "weak": "84",
+        "strong": "355",
+        "untapped": "0",
+        "unique": "0",
+        "all": "439"
+      },
+      {
+        "rank": 10,
+        "domain": "whereyoueat.com",
+        "shared": "370",
+        "missing": "0",
+        "weak": "216",
+        "strong": "154",
+        "untapped": "0",
+        "unique": "0",
+        "all": "370"
+      }
+    ]
+  },
+  "localoria.com": {
+    "collected_at": "2026-03-27T22:25:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "lahacienditachi.com",
+        "shared": "14",
+        "missing": "0",
+        "weak": "11",
+        "strong": "3",
+        "untapped": "0",
+        "unique": "0",
+        "all": "14"
+      },
+      {
+        "rank": 2,
+        "domain": "arandasmexicancuisine.com",
+        "shared": "9",
+        "missing": "0",
+        "weak": "5",
+        "strong": "4",
+        "untapped": "0",
+        "unique": "0",
+        "all": "9"
+      },
+      {
+        "rank": 3,
+        "domain": "basmahalsohbany.github.io",
+        "shared": "9",
+        "missing": "0",
+        "weak": "2",
+        "strong": "7",
+        "untapped": "0",
+        "unique": "0",
+        "all": "9"
+      },
+      {
+        "rank": 4,
+        "domain": "originaltommys.com",
+        "shared": "9",
+        "missing": "0",
+        "weak": "4",
+        "strong": "5",
+        "untapped": "0",
+        "unique": "0",
+        "all": "9"
+      },
+      {
+        "rank": 5,
+        "domain": "taqueriasarandas.com",
+        "shared": "13",
+        "missing": "0",
+        "weak": "11",
+        "strong": "2",
+        "untapped": "0",
+        "unique": "0",
+        "all": "13"
+      },
+      {
+        "rank": 6,
+        "domain": "yiannisgyros.com",
+        "shared": "8",
+        "missing": "0",
+        "weak": "4",
+        "strong": "4",
+        "untapped": "0",
+        "unique": "0",
+        "all": "8"
+      },
+      {
+        "rank": 7,
+        "domain": "cafe-agora.com",
+        "shared": "18",
+        "missing": "0",
+        "weak": "12",
+        "strong": "6",
+        "untapped": "0",
+        "unique": "0",
+        "all": "18"
+      },
+      {
+        "rank": 8,
+        "domain": "rubispizzasteubenville.com",
+        "shared": "11",
+        "missing": "0",
+        "weak": "8",
+        "strong": "3",
+        "untapped": "0",
+        "unique": "0",
+        "all": "11"
+      },
+      {
+        "rank": 9,
+        "domain": "jayschicken.uk",
+        "shared": "0",
+        "missing": "0",
+        "weak": "0",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "0"
+      },
+      {
+        "rank": 10,
+        "domain": "elamigoco.com",
+        "shared": "7",
+        "missing": "0",
+        "weak": "2",
+        "strong": "5",
+        "untapped": "0",
+        "unique": "0",
+        "all": "7"
+      }
+    ]
+  },
+  "placejoys.com": {
+    "collected_at": "2026-03-27T22:32:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "menu-res.com",
+        "shared": "717",
+        "missing": "0",
+        "weak": "307",
+        "strong": "410",
+        "untapped": "0",
+        "unique": "0",
+        "all": "717"
+      },
+      {
+        "rank": 2,
+        "domain": "goto-restaurants.com",
+        "shared": "1.6K",
+        "missing": "0",
+        "weak": "725",
+        "strong": "910",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1.6K"
+      },
+      {
+        "rank": 3,
+        "domain": "weeblyte.com",
+        "shared": "3.6K",
+        "missing": "0",
+        "weak": "1.6K",
+        "strong": "2K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "3.6K"
+      },
+      {
+        "rank": 4,
+        "domain": "restaurants-us.com",
+        "shared": "550",
+        "missing": "0",
+        "weak": "283",
+        "strong": "267",
+        "untapped": "0",
+        "unique": "0",
+        "all": "550"
+      },
+      {
+        "rank": 5,
+        "domain": "zmenu.com",
+        "shared": "4.2K",
+        "missing": "0",
+        "weak": "929",
+        "strong": "3.3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "4.2K"
+      },
+      {
+        "rank": 6,
+        "domain": "restaurantguru.com",
+        "shared": "2.2K",
+        "missing": "0",
+        "weak": "226",
+        "strong": "1.9K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "2.2K"
+      },
+      {
+        "rank": 7,
+        "domain": "menupix.com",
+        "shared": "3.9K",
+        "missing": "0",
+        "weak": "538",
+        "strong": "3.3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "3.9K"
+      },
+      {
+        "rank": 8,
+        "domain": "restaurants-info.com",
+        "shared": "380",
+        "missing": "0",
+        "weak": "141",
+        "strong": "239",
+        "untapped": "0",
+        "unique": "0",
+        "all": "380"
+      },
+      {
+        "rank": 9,
+        "domain": "hey-restaurants.com",
+        "shared": "597",
+        "missing": "0",
+        "weak": "278",
+        "strong": "319",
+        "untapped": "0",
+        "unique": "0",
+        "all": "597"
+      },
+      {
+        "rank": 10,
+        "domain": "menuweb.menu",
+        "shared": "710",
+        "missing": "0",
+        "weak": "233",
+        "strong": "477",
+        "untapped": "0",
+        "unique": "0",
+        "all": "710"
+      }
+    ]
+  },
+  "wherebly.com": {
+    "collected_at": "2026-03-27T22:41:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "seafoodandmore.shop",
+        "shared": "0",
+        "missing": "0",
+        "weak": "0",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "0"
+      },
+      {
+        "rank": 2,
+        "domain": "theoriginalnealsrestaurant.shop",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 3,
+        "domain": "foodsmo.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 4,
+        "domain": "theharvesttablebuffet.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 5,
+        "domain": "michaelmckeegallery.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 6,
+        "domain": "pizza-capo.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 7,
+        "domain": "newmingwah.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 8,
+        "domain": "neilspizzainwayne.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 9,
+        "domain": "mfcofaugusta.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 10,
+        "domain": "houseofchanaugusta.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      }
+    ]
+  },
+  "foodplacee.com": {
+    "collected_at": "2026-03-27T22:50:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "sybilsoriginal.com",
+        "shared": "3",
+        "missing": "0",
+        "weak": "3",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "3"
+      },
+      {
+        "rank": 2,
+        "domain": "sybilsbakeryrestaurant.shop",
+        "shared": "0",
+        "missing": "0",
+        "weak": "0",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "0"
+      },
+      {
+        "rank": 3,
+        "domain": "patrongrillhumble.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 4,
+        "domain": "patrongrill.shop",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 5,
+        "domain": "jamaicaway.shop",
+        "shared": "0",
+        "missing": "0",
+        "weak": "0",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "0"
+      },
+      {
+        "rank": 6,
+        "domain": "pho-hung.square.site",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 7,
+        "domain": "patronmexicangrillohio.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 8,
+        "domain": "fujihillcrest.shop",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 9,
+        "domain": "breadico.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 10,
+        "domain": "ordercafe82.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      }
+    ]
+  },
+  "wheree.com": {
+    "collected_at": "2026-03-27T22:57:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "mapquest.com",
+        "shared": "3.5M",
+        "missing": "0",
+        "weak": "2.9M",
+        "strong": "637.2K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "3.5M"
+      },
+      {
+        "rank": 2,
+        "domain": "nextdoor.com",
+        "shared": "664.4K",
+        "missing": "0",
+        "weak": "302.3K",
+        "strong": "362.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "664.4K"
+      },
+      {
+        "rank": 3,
+        "domain": "doordash.com",
+        "shared": "591.9K",
+        "missing": "0",
+        "weak": "464.3K",
+        "strong": "127.6K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "591.9K"
+      },
+      {
+        "rank": 4,
+        "domain": "waze.com",
+        "shared": "706.3K",
+        "missing": "0",
+        "weak": "493.5K",
+        "strong": "212.8K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "706.3K"
+      },
+      {
+        "rank": 5,
+        "domain": "twitter.com",
+        "shared": "1.3K",
+        "missing": "0",
+        "weak": "320",
+        "strong": "1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1.3K"
+      },
+      {
+        "rank": 6,
+        "domain": "yelp.com",
+        "shared": "4M",
+        "missing": "0",
+        "weak": "3.8M",
+        "strong": "188.3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "4M"
+      },
+      {
+        "rank": 7,
+        "domain": "tripadvisor.com",
+        "shared": "1.6M",
+        "missing": "0",
+        "weak": "1.4M",
+        "strong": "236.6K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1.6M"
+      },
+      {
+        "rank": 8,
+        "domain": "ubereats.com",
+        "shared": "479.7K",
+        "missing": "0",
+        "weak": "342.4K",
+        "strong": "137.3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "479.7K"
+      },
+      {
+        "rank": 9,
+        "domain": "bbb.org",
+        "shared": "582.5K",
+        "missing": "0",
+        "weak": "301.8K",
+        "strong": "280.7K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "582.5K"
+      },
+      {
+        "rank": 10,
+        "domain": "grubhub.com",
+        "shared": "338.9K",
+        "missing": "0",
+        "weak": "258.8K",
+        "strong": "80.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "338.9K"
+      }
+    ]
+  },
+  "com-fnb.com": {
+    "collected_at": "2026-03-27T23:08:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "restaurants-us.com",
+        "shared": "151",
+        "missing": "0",
+        "weak": "132",
+        "strong": "19",
+        "untapped": "0",
+        "unique": "0",
+        "all": "151"
+      },
+      {
+        "rank": 2,
+        "domain": "template.net",
+        "shared": "0",
+        "missing": "0",
+        "weak": "0",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "0"
+      },
+      {
+        "rank": 3,
+        "domain": "kyotosteakandsushi.com",
+        "shared": "0",
+        "missing": "0",
+        "weak": "0",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "0"
+      },
+      {
+        "rank": 4,
+        "domain": "cjsbulgogigrill.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 5,
+        "domain": "dubveatz.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 6,
+        "domain": "bawarchibiryanis.us",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 7,
+        "domain": "allhungry.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 8,
+        "domain": "stampmillsd.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "1",
+        "strong": "0",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 9,
+        "domain": "miltsstopandeat.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      },
+      {
+        "rank": 10,
+        "domain": "cravingsgourmet.com",
+        "shared": "1",
+        "missing": "0",
+        "weak": "0",
+        "strong": "1",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1"
+      }
+    ]
+  },
+  "com-place.com": {
+    "collected_at": "2026-03-27T23:23:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "giftly.com",
+        "shared": "15.2K",
+        "missing": "0",
+        "weak": "1.3K",
+        "strong": "14K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "15.2K"
+      },
+      {
+        "rank": 2,
+        "domain": "cmac.ws",
+        "shared": "11.2K",
+        "missing": "0",
+        "weak": "886",
+        "strong": "10.3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "11.2K"
+      },
+      {
+        "rank": 3,
+        "domain": "fresha.com",
+        "shared": "11.7K",
+        "missing": "0",
+        "weak": "6.3K",
+        "strong": "5.5K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "11.7K"
+      },
+      {
+        "rank": 4,
+        "domain": "edan.io",
+        "shared": "5.8K",
+        "missing": "0",
+        "weak": "2.8K",
+        "strong": "3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "5.8K"
+      },
+      {
+        "rank": 5,
+        "domain": "yellowpages.com",
+        "shared": "17.1K",
+        "missing": "0",
+        "weak": "1.2K",
+        "strong": "15.9K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "17.1K"
+      },
+      {
+        "rank": 6,
+        "domain": "hub.biz",
+        "shared": "4.7K",
+        "missing": "0",
+        "weak": "743",
+        "strong": "4K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "4.7K"
+      },
+      {
+        "rank": 7,
+        "domain": "menupix.com",
+        "shared": "6.1K",
+        "missing": "0",
+        "weak": "685",
+        "strong": "5.4K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "6.1K"
+      },
+      {
+        "rank": 8,
+        "domain": "wanderboat.ai",
+        "shared": "5.8K",
+        "missing": "0",
+        "weak": "845",
+        "strong": "5K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "5.8K"
+      },
+      {
+        "rank": 9,
+        "domain": "roadtrippers.com",
+        "shared": "5.6K",
+        "missing": "0",
+        "weak": "343",
+        "strong": "5.2K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "5.6K"
+      },
+      {
+        "rank": 10,
+        "domain": "wheree.com",
+        "shared": "102.3K",
+        "missing": "0",
+        "weak": "30.7K",
+        "strong": "71.6K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "102.3K"
+      }
+    ]
+  },
+  "goto-restaurants.com": {
+    "collected_at": "2026-03-27T23:31:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "zmenu.com",
+        "shared": "25.8K",
+        "missing": "0",
+        "weak": "4.8K",
+        "strong": "21K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "25.8K"
+      },
+      {
+        "rank": 2,
+        "domain": "weeblyte.com",
+        "shared": "15.8K",
+        "missing": "0",
+        "weak": "7.7K",
+        "strong": "8.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "15.8K"
+      },
+      {
+        "rank": 3,
+        "domain": "menupix.com",
+        "shared": "20.2K",
+        "missing": "0",
+        "weak": "2.7K",
+        "strong": "17.5K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "20.2K"
+      },
+      {
+        "rank": 4,
+        "domain": "restaurants-world.net",
+        "shared": "10.3K",
+        "missing": "0",
+        "weak": "5.4K",
+        "strong": "4.9K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "10.3K"
+      },
+      {
+        "rank": 5,
+        "domain": "res-menu.net",
+        "shared": "11.9K",
+        "missing": "0",
+        "weak": "5.8K",
+        "strong": "6.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "11.9K"
+      },
+      {
+        "rank": 6,
+        "domain": "restaurantguru.com",
+        "shared": "9.3K",
+        "missing": "0",
+        "weak": "930",
+        "strong": "8.3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "9.3K"
+      },
+      {
+        "rank": 7,
+        "domain": "menu-world.com",
+        "shared": "13.8K",
+        "missing": "0",
+        "weak": "9.6K",
+        "strong": "4.2K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "13.8K"
+      },
+      {
+        "rank": 8,
+        "domain": "goto-where.com",
+        "shared": "9.4K",
+        "missing": "0",
+        "weak": "4.9K",
+        "strong": "4.5K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "9.4K"
+      },
+      {
+        "rank": 9,
+        "domain": "netwaiter.com",
+        "shared": "9.4K",
+        "missing": "0",
+        "weak": "2.7K",
+        "strong": "6.7K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "9.4K"
+      },
+      {
+        "rank": 10,
+        "domain": "menuweb.menu",
+        "shared": "3.5K",
+        "missing": "0",
+        "weak": "949",
+        "strong": "2.6K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "3.5K"
+      }
+    ]
+  },
+  "wanderlog.com": {
+    "collected_at": "2026-03-27T23:38:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "weatherspark.com",
+        "shared": "77.8K",
+        "missing": "0",
+        "weak": "71.5K",
+        "strong": "6.3K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "77.8K"
+      },
+      {
+        "rank": 2,
+        "domain": "opentable.com",
+        "shared": "164.5K",
+        "missing": "0",
+        "weak": "136.3K",
+        "strong": "28.2K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "164.5K"
+      },
+      {
+        "rank": 3,
+        "domain": "wheree.com",
+        "shared": "361.4K",
+        "missing": "0",
+        "weak": "167.8K",
+        "strong": "193.6K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "361.4K"
+      },
+      {
+        "rank": 4,
+        "domain": "mindtrip.ai",
+        "shared": "95.5K",
+        "missing": "0",
+        "weak": "27.3K",
+        "strong": "68.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "95.5K"
+      },
+      {
+        "rank": 5,
+        "domain": "doordash.com",
+        "shared": "183.8K",
+        "missing": "0",
+        "weak": "138.2K",
+        "strong": "45.6K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "183.8K"
+      },
+      {
+        "rank": 6,
+        "domain": "tripadvisor.com",
+        "shared": "997.8K",
+        "missing": "0",
+        "weak": "895.9K",
+        "strong": "101.8K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "997.8K"
+      },
+      {
+        "rank": 7,
+        "domain": "accuweather.com",
+        "shared": "76.9K",
+        "missing": "0",
+        "weak": "69.4K",
+        "strong": "7.5K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "76.9K"
+      },
+      {
+        "rank": 8,
+        "domain": "rome2rio.com",
+        "shared": "78.9K",
+        "missing": "0",
+        "weak": "70K",
+        "strong": "8.9K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "78.9K"
+      },
+      {
+        "rank": 9,
+        "domain": "ubereats.com",
+        "shared": "169.1K",
+        "missing": "0",
+        "weak": "109.8K",
+        "strong": "59.2K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "169.1K"
+      },
+      {
+        "rank": 10,
+        "domain": "holiday-weather.com",
+        "shared": "53K",
+        "missing": "0",
+        "weak": "31.2K",
+        "strong": "21.8K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "53K"
+      }
+    ]
+  },
+  "menu-res.com": {
+    "collected_at": "2026-03-27T23:48:00",
+    "position_filter": "Top 20",
+    "max_competitors": 10,
+    "competitors": [
+      {
+        "rank": 1,
+        "domain": "weeblyte.com",
+        "shared": "6.8K",
+        "missing": "0",
+        "weak": "2.9K",
+        "strong": "3.9K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "6.8K"
+      },
+      {
+        "rank": 2,
+        "domain": "hey-restaurants.com",
+        "shared": "2.5K",
+        "missing": "0",
+        "weak": "830",
+        "strong": "1.6K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "2.5K"
+      },
+      {
+        "rank": 3,
+        "domain": "restaurants-world.net",
+        "shared": "3.7K",
+        "missing": "0",
+        "weak": "1.9K",
+        "strong": "1.8K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "3.7K"
+      },
+      {
+        "rank": 4,
+        "domain": "findmenuworld.com",
+        "shared": "1.3K",
+        "missing": "0",
+        "weak": "316",
+        "strong": "1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1.3K"
+      },
+      {
+        "rank": 5,
+        "domain": "res-menu.net",
+        "shared": "4.3K",
+        "missing": "0",
+        "weak": "2.1K",
+        "strong": "2.2K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "4.3K"
+      },
+      {
+        "rank": 6,
+        "domain": "goto-where.com",
+        "shared": "3.4K",
+        "missing": "0",
+        "weak": "1.9K",
+        "strong": "1.5K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "3.4K"
+      },
+      {
+        "rank": 7,
+        "domain": "placejoys.com",
+        "shared": "717",
+        "missing": "0",
+        "weak": "410",
+        "strong": "307",
+        "untapped": "0",
+        "unique": "0",
+        "all": "717"
+      },
+      {
+        "rank": 8,
+        "domain": "menupix.com",
+        "shared": "4.7K",
+        "missing": "0",
+        "weak": "602",
+        "strong": "4.1K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "4.7K"
+      },
+      {
+        "rank": 9,
+        "domain": "menuweb.menu",
+        "shared": "1.1K",
+        "missing": "0",
+        "weak": "287",
+        "strong": "847",
+        "untapped": "0",
+        "unique": "0",
+        "all": "1.1K"
+      },
+      {
+        "rank": 10,
+        "domain": "netwaiter.com",
+        "shared": "2.8K",
+        "missing": "0",
+        "weak": "819",
+        "strong": "2K",
+        "untapped": "0",
+        "unique": "0",
+        "all": "2.8K"
+      }
+    ]
+  }
+}
