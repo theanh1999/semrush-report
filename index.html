@@ -1,80 +1,1992 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Semrush Reports - SEO Dashboard</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Phân Tích Đối Thủ Theo Nhóm - 28/03/2026 22:05</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#1a1a2e;color:#e0e0e0;font-family:Arial,sans-serif;padding:40px 20px}
-.container{max-width:900px;margin:0 auto}
-h1{text-align:center;color:#00d4ff;margin-bottom:10px;font-size:28px}
-.subtitle{text-align:center;color:#888;margin-bottom:40px}
-.section{margin-bottom:30px}
-.section h2{color:#4CAF50;margin-bottom:15px;font-size:20px;border-bottom:1px solid #333;padding-bottom:8px}
-.section h2.competitor{color:#F44336}
-.section h2.domain{color:#a78bfa}
-.report-list{list-style:none}
-.report-list li{margin-bottom:10px}
-.report-list a{display:block;padding:14px 20px;background:#16213e;border-radius:8px;color:#00d4ff;text-decoration:none;transition:all 0.3s;border-left:4px solid #00d4ff}
-.report-list a:hover{background:#1a2744;transform:translateX(5px)}
-.report-list a .date{color:#888;font-size:13px}
-.report-list a .new{background:#4CAF50;color:#fff;padding:2px 8px;border-radius:4px;font-size:11px;margin-left:8px}
-.footer{text-align:center;color:#555;margin-top:50px;font-size:13px}
-</style>
-</head>
-<body>
-<div class="container">
-<h1>📊 Semrush SEO Reports</h1>
-<p class="subtitle">Nghiên Cứu Thị Trường - Restaurants & Hotels</p>
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:linear-gradient(135deg,#f5f7fa,#c3cfe2);padding:20px;min-height:100vh;color:#2d3748}
+.container{max-width:1400px;margin:0 auto;background:white;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,0.12);overflow:hidden}
+.header{background:linear-gradient(135deg,#667eea,#764ba2);color:white;padding:45px 40px;text-align:center}
+.header h1{font-size:2.2em;margin-bottom:8px;text-shadow:0 2px 4px rgba(0,0,0,0.2)}
+.header p{font-size:1.05em;opacity:0.9}
+.badge{display:inline-block;background:rgba(255,255,255,0.2);padding:5px 15px;border-radius:20px;margin-top:10px;font-size:0.85em}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;padding:25px 30px;background:#f8f9fa}
+.stat-box{background:white;padding:20px;border-radius:12px;box-shadow:0 3px 12px rgba(0,0,0,0.07);text-align:center}
+.stat-box .val{font-size:1.8em;font-weight:800}
+.stat-box .lbl{color:#718096;font-size:0.85em;margin-top:4px}
+.section{padding:28px 35px}
+.section h2{font-size:1.4em;color:#2d3748;margin-bottom:16px;padding-bottom:8px;border-bottom:3px solid #667eea;display:inline-block}
+.section h2.dt{border-color:#e53e3e}
+.section h2.cross{border-color:#38a169}
+table{width:100%;border-collapse:collapse;margin:10px 0}
+th{background:linear-gradient(135deg,#667eea,#764ba2);color:white;padding:10px 8px;text-align:left;font-size:0.85em;font-weight:600}
+table.dt-table th{background:linear-gradient(135deg,#e53e3e,#c53030)}
+table.cross-table th{background:linear-gradient(135deg,#38a169,#2f855a)}
+td{padding:10px 8px;border-bottom:1px solid #e2e8f0;font-size:0.88em}
+tr:hover td{background:#f7fafc}
+.insight{background:linear-gradient(135deg,#ebf8ff,#e6fffa);border-left:4px solid #4fd1c5;padding:18px;border-radius:8px;margin:15px 0}
+.insight h4{color:#234e52;margin-bottom:6px}
+.insight p{color:#2c7a7b;line-height:1.6;font-size:0.92em}
+.footer{background:#1a202c;color:#a0aec0;padding:22px 35px;text-align:center;font-size:0.85em}
+.footer a{color:#667eea;text-decoration:none}
+.group-label{display:inline-block;padding:3px 12px;border-radius:12px;font-size:0.75em;font-weight:bold;color:white}
+@media(max-width:768px){.header h1{font-size:1.5em}.section{padding:15px}table{font-size:0.78em}th,td{padding:6px 4px}}
+</style></head>
+<body><div class="container">
 
-<div class="section">
-<h2 class="domain">🌐 Domain Overview (Semrush API)</h2>
-<ul class="report-list">
-<li><a href="overview-20260327.html">🆕 Domain Overview - 27/03/2026 <span class="new">MỚI</span><br><span class="date">25 domains | Authority Score, Organic Traffic, Keywords, Backlinks | Data 26/03</span></a></li>
-<li><a href="analysis-20260327.html">🆕 Phân Tích Domain Chuyên Sâu - 27/03/2026 <span class="new">MỚI</span><br><span class="date">6 sections | Radar chart | So sánh chéo mình vs đối thủ | Khuyến nghị</span></a></li>
-<li><a href="overview-20260326-domain.html">Domain Overview - 26/03/2026<br><span class="date">25 domains | Authority Score, Organic Traffic, Keywords, Backlinks | Semrush API data</span></a></li>
-<li><a href="analysis-20260326-domain.html">Phân Tích Domain Chuyên Sâu - 26/03/2026<br><span class="date">6 sections | Radar chart | So sánh chéo mình vs đối thủ | Khuyến nghị</span></a></li>
-</ul>
+<!-- HEADER -->
+<div class="header">
+    <h1>Phân Tích Đối Thủ Cạnh Tranh Theo Nhóm</h1>
+    <p>So sánh chi tiết giữa nhóm website nhà hàng và nhóm đối thủ</p>
+    <div class="badge">Ngày: 28/03/2026 22:05 | Nguồn: Semrush muatool v3.0.0 | Nhóm tôi: 13 sites | Đối thủ: 12 sites | Giới hạn: Top 100 đối thủ/domain</div>
 </div>
 
-<div class="section">
-<h2>📋 Báo Cáo Tổng Quan (Overview)</h2>
-<ul class="report-list">
-<li><a href="overview-20260326.html">Tổng Quan SEO - 26/03/2026<br><span class="date">25 websites | 3 nhóm | Authority Score, Traffic, Keywords, Backlinks</span></a></li>
-</ul>
+<!-- STATS -->
+<div class="stats">
+    <div class="stat-box"><div class="val" style="color:#667eea">13</div><div class="lbl">Website nhà hàng</div></div>
+    <div class="stat-box"><div class="val" style="color:#38b2ac">1</div><div class="lbl">Website hotel</div></div>
+    <div class="stat-box"><div class="val" style="color:#e53e3e">12</div><div class="lbl">Website đối thủ</div></div>
+    <div class="stat-box"><div class="val" style="color:#805ad5">1.3K</div><div class="lbl">Competitors nhóm tôi<br><small style="color:#a0aec0">top 100/domain</small></div></div>
+    <div class="stat-box"><div class="val" style="color:#dd6b20">1.2K</div><div class="lbl">Competitors nhóm đối thủ<br><small style="color:#a0aec0">top 100/domain</small></div></div>
+    <div class="stat-box"><div class="val" style="color:#38a169">9/12</div><div class="lbl">Đối thủ trùng lặp</div></div>
 </div>
 
+<!-- NHÓM NHÀ HÀNG -->
 <div class="section">
-<h2>🔬 Phân Tích Chuyên Sâu (Deep Analysis)</h2>
-<ul class="report-list">
-<li><a href="analysis-20260326.html">Phân Tích Chuyên Sâu - 26/03/2026<br><span class="date">So sánh chéo 3 nhóm | Radar chart | Insights & Recommendations</span></a></li>
-<li><a href="group-analysis-20260326.html">Phân Tích Nhóm - 26/03/2026<br><span class="date">Phân tích theo nhóm chi tiết</span></a></li>
-<li><a href="group-analysis-20260325.html">Phân Tích Nhóm - 25/03/2026<br><span class="date">Phân tích theo nhóm chi tiết</span></a></li>
-</ul>
+    <h2><span class="group-label" style="background:#667eea">NHÓM TÔI</span> Nhóm Website Nhà Hàng (13 sites)</h2>
+    <p style="color:#718096;margin-bottom:10px;font-size:0.88em">⚠️ Dữ liệu giới hạn <strong>top 100 đối thủ</strong> cho mỗi domain (export từ muatool v3.0.0)</p>
+    <table><thead><tr>
+        <th>#</th><th>Domain</th><th>Số Competitors</th><th>Top Competitor</th>
+        <th>Max Relevance</th><th>Avg Common KW</th><th>Avg Traffic (Top5)</th><th>Avg Cost (Top5)</th>
+    </tr></thead><tbody><tr>
+            <td style="text-align:center">1</td>
+            <td><strong>goto-where.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>menupix.com</td>
+            <td style="text-align:center">0.12</td>
+            <td style="text-align:right">22.3K</td>
+            <td style="text-align:right">414.1K</td>
+            <td style="text-align:right">$84.3K</td>
+        </tr><tr>
+            <td style="text-align:center">2</td>
+            <td><strong>menu-world.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>zmenu.com</td>
+            <td style="text-align:center">0.13</td>
+            <td style="text-align:right">45.2K</td>
+            <td style="text-align:right">901.0K</td>
+            <td style="text-align:right">$398.6K</td>
+        </tr><tr>
+            <td style="text-align:center">3</td>
+            <td><strong>grubbio.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>soulmama.co.uk</td>
+            <td style="text-align:center">0.00</td>
+            <td style="text-align:right">1</td>
+            <td style="text-align:right">2.0K</td>
+            <td style="text-align:right">$1.1K</td>
+        </tr><tr>
+            <td style="text-align:center">4</td>
+            <td><strong>menustic.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>noodles.com</td>
+            <td style="text-align:center">0.00</td>
+            <td style="text-align:right">1</td>
+            <td style="text-align:right">154.8K</td>
+            <td style="text-align:right">$36.1K</td>
+        </tr><tr>
+            <td style="text-align:center">5</td>
+            <td><strong>menufyy.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>restaurantji.com</td>
+            <td style="text-align:center">0.01</td>
+            <td style="text-align:right">1.2K</td>
+            <td style="text-align:right">237.2K</td>
+            <td style="text-align:right">$38.6K</td>
+        </tr><tr>
+            <td style="text-align:center">6</td>
+            <td><strong>gohotelly.com</strong> <span style="background:#38b2ac;color:white;padding:1px 8px;border-radius:10px;font-size:0.7em">HOTEL</span></td>
+            <td style="text-align:center">100</td>
+            <td>gohotelo.com</td>
+            <td style="text-align:center">0.05</td>
+            <td style="text-align:right">22</td>
+            <td style="text-align:right">1.9K</td>
+            <td style="text-align:right">$1.4K</td>
+        </tr><tr>
+            <td style="text-align:center">7</td>
+            <td><strong>res-menu.net</strong></td>
+            <td style="text-align:center">100</td>
+            <td>findmenuworld.com</td>
+            <td style="text-align:center">0.16</td>
+            <td style="text-align:right">27.3K</td>
+            <td style="text-align:right">419.1K</td>
+            <td style="text-align:right">$87.6K</td>
+        </tr><tr>
+            <td style="text-align:center">8</td>
+            <td><strong>restaurants-world.net</strong></td>
+            <td style="text-align:center">100</td>
+            <td>weeblyte.com</td>
+            <td style="text-align:center">0.12</td>
+            <td style="text-align:right">20.1K</td>
+            <td style="text-align:right">476.2K</td>
+            <td style="text-align:right">$96.7K</td>
+        </tr><tr>
+            <td style="text-align:center">9</td>
+            <td><strong>wherevi.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>hey-restaurants.com</td>
+            <td style="text-align:center">0.02</td>
+            <td style="text-align:right">1.1K</td>
+            <td style="text-align:right">297.9K</td>
+            <td style="text-align:right">$59.7K</td>
+        </tr><tr>
+            <td style="text-align:center">10</td>
+            <td><strong>localoria.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>basmahalsohbany.github.io</td>
+            <td style="text-align:center">0.01</td>
+            <td style="text-align:right">9</td>
+            <td style="text-align:right">8.5K</td>
+            <td style="text-align:right">$4.1K</td>
+        </tr><tr>
+            <td style="text-align:center">11</td>
+            <td><strong>placejoys.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>menu-res.com</td>
+            <td style="text-align:center">0.03</td>
+            <td style="text-align:right">2.2K</td>
+            <td style="text-align:right">279.6K</td>
+            <td style="text-align:right">$46.3K</td>
+        </tr><tr>
+            <td style="text-align:center">12</td>
+            <td><strong>wherebly.com</strong></td>
+            <td style="text-align:center">61</td>
+            <td>seafoodandmore.shop</td>
+            <td style="text-align:center">0.07</td>
+            <td style="text-align:right">1</td>
+            <td style="text-align:right">715</td>
+            <td style="text-align:right">$88</td>
+        </tr><tr>
+            <td style="text-align:center">13</td>
+            <td><strong>foodplacee.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>sybilsoriginal.com</td>
+            <td style="text-align:center">0.10</td>
+            <td style="text-align:right">1</td>
+            <td style="text-align:right">910</td>
+            <td style="text-align:right">$630</td>
+        </tr></tbody></table>
 </div>
 
-<div class="section">
-<h2 style="color:#FF9800">🔑 Keyword Gap (Semrush)</h2>
-<ul class="report-list">
-<li><a href="keyword-gap-overview-20260327.html">🆕 Keyword Gap Overview - 27/03/2026 <span class="new">MỚI</span><br><span class="date">19/25 domains | Shared, Weak, Strong keywords | Position Top 20 filter</span></a></li>
-<li><a href="keyword-gap-detail-20260327.html">🆕 Keyword Gap Chi Tiết - 27/03/2026 <span class="new">MỚI</span><br><span class="date">Per-domain detail | Bar & Radar charts | Auto analysis notes</span></a></li>
-<li><a href="keyword-gap-report-20260327.xlsx">📥 Download Excel Report - 27/03/2026<br><span class="date">2 sheets: Tổng hợp + Theo nhóm | 19 domains × 10 competitors</span></a></li>
-</ul>
+<!-- NHÓM ĐỐI THỦ -->
+<div class="section" style="background:#fff5f5">
+    <h2 class="dt"><span class="group-label" style="background:#e53e3e">ĐỐI THỦ</span> Nhóm Đối Thủ (12 sites)</h2>
+    <p style="color:#718096;margin-bottom:10px;font-size:0.88em">⚠️ Dữ liệu giới hạn <strong>top 100 đối thủ</strong> cho mỗi domain (export từ muatool v3.0.0)</p>
+    <table class="dt-table"><thead><tr>
+        <th>#</th><th>Domain</th><th>Số Competitors</th><th>Top Competitor</th>
+        <th>Max Relevance</th><th>Avg Common KW</th><th>Avg Traffic (Top5)</th><th>Avg Cost (Top5)</th>
+    </tr></thead><tbody><tr>
+            <td style="text-align:center">1</td>
+            <td><strong>wheree.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>mapquest.com</td>
+            <td style="text-align:center">0.24</td>
+            <td style="text-align:right">1.3M</td>
+            <td style="text-align:right">26.7M</td>
+            <td style="text-align:right">$23.3M</td>
+        </tr><tr>
+            <td style="text-align:center">2</td>
+            <td><strong>com-fnb.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>menuweb.menu</td>
+            <td style="text-align:center">0.01</td>
+            <td style="text-align:right">102</td>
+            <td style="text-align:right">99.1K</td>
+            <td style="text-align:right">$22.1K</td>
+        </tr><tr>
+            <td style="text-align:center">3</td>
+            <td><strong>com-place.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>giftly.com</td>
+            <td style="text-align:center">0.06</td>
+            <td style="text-align:right">9.9K</td>
+            <td style="text-align:right">337.0K</td>
+            <td style="text-align:right">$216.9K</td>
+        </tr><tr>
+            <td style="text-align:center">4</td>
+            <td><strong>goto-restaurants.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>zmenu.com</td>
+            <td style="text-align:center">0.14</td>
+            <td style="text-align:right">16.8K</td>
+            <td style="text-align:right">354.9K</td>
+            <td style="text-align:right">$62.8K</td>
+        </tr><tr>
+            <td style="text-align:center">5</td>
+            <td><strong>wanderlog.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>weatherspark.com</td>
+            <td style="text-align:center">0.15</td>
+            <td style="text-align:right">191.0K</td>
+            <td style="text-align:right">5.5M</td>
+            <td style="text-align:right">$3.8M</td>
+        </tr><tr>
+            <td style="text-align:center">6</td>
+            <td><strong>menu-res.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>menuweb.menu</td>
+            <td style="text-align:center">0.01</td>
+            <td style="text-align:right">102</td>
+            <td style="text-align:right">99.1K</td>
+            <td style="text-align:right">$22.1K</td>
+        </tr><tr>
+            <td style="text-align:center">7</td>
+            <td><strong>restaurantmenu.us.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>menuweb.menu</td>
+            <td style="text-align:center">0.01</td>
+            <td style="text-align:right">102</td>
+            <td style="text-align:right">99.1K</td>
+            <td style="text-align:right">$22.1K</td>
+        </tr><tr>
+            <td style="text-align:center">8</td>
+            <td><strong>com-hotel.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>menuweb.menu</td>
+            <td style="text-align:center">0.01</td>
+            <td style="text-align:right">102</td>
+            <td style="text-align:right">99.1K</td>
+            <td style="text-align:right">$22.1K</td>
+        </tr><tr>
+            <td style="text-align:center">9</td>
+            <td><strong>gotoeat.net</strong></td>
+            <td style="text-align:center">100</td>
+            <td>menuweb.menu</td>
+            <td style="text-align:center">0.01</td>
+            <td style="text-align:right">102</td>
+            <td style="text-align:right">99.1K</td>
+            <td style="text-align:right">$22.1K</td>
+        </tr><tr>
+            <td style="text-align:center">10</td>
+            <td><strong>restaurants-info.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>menuweb.menu</td>
+            <td style="text-align:center">0.01</td>
+            <td style="text-align:right">102</td>
+            <td style="text-align:right">99.1K</td>
+            <td style="text-align:right">$22.1K</td>
+        </tr><tr>
+            <td style="text-align:center">11</td>
+            <td><strong>hey-restaurants.com</strong></td>
+            <td style="text-align:center">100</td>
+            <td>menuweb.menu</td>
+            <td style="text-align:center">0.01</td>
+            <td style="text-align:right">102</td>
+            <td style="text-align:right">99.1K</td>
+            <td style="text-align:right">$22.1K</td>
+        </tr><tr>
+            <td style="text-align:center">12</td>
+            <td><strong>eatat.us</strong></td>
+            <td style="text-align:center">100</td>
+            <td>menuweb.menu</td>
+            <td style="text-align:center">0.01</td>
+            <td style="text-align:right">102</td>
+            <td style="text-align:right">99.1K</td>
+            <td style="text-align:right">$22.1K</td>
+        </tr></tbody></table>
 </div>
 
+<!-- CROSS-ANALYSIS: Đối thủ xuất hiện trong nhóm tôi -->
 <div class="section">
-<h2 class="competitor">⚔️ Báo Cáo Đối Thủ (Competitor Reports)</h2>
-<ul class="report-list">
-<li><a href="competitor-report-20260326.html">Báo Cáo Đối Thủ - 26/03/2026<br><span class="date">So sánh đối thủ cạnh tranh</span></a></li>
-<li><a href="competitor-report-20260325.html">Báo Cáo Đối Thủ - 25/03/2026<br><span class="date">So sánh đối thủ cạnh tranh</span></a></li>
-</ul>
+    <h2 class="cross">Đối Thủ Xuất Hiện Trong Nhóm Nhà Hàng Của Tôi</h2>
+    <p style="color:#718096;margin-bottom:12px">Các website đối thủ (nhóm đỏ) xuất hiện bao nhiêu lần trong danh sách competitors của nhóm nhà hàng (nhóm xanh)</p>
+    <table class="dt-table"><thead><tr>
+        <th>#</th><th>Đối thủ</th><th>Xuất hiện</th><th>Tỷ lệ</th><th>%</th>
+    </tr></thead><tbody><tr>
+            <td style="text-align:center">1</td>
+            <td><strong>menu-res.com</strong></td>
+            <td style="text-align:center">7/13</td>
+            <td>
+                <div style="background:#fed7d7;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#e53e3e;height:100%;width:54%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#e53e3e">54%</td>
+        </tr><tr>
+            <td style="text-align:center">2</td>
+            <td><strong>wheree.com</strong></td>
+            <td style="text-align:center">6/13</td>
+            <td>
+                <div style="background:#fed7d7;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#e53e3e;height:100%;width:46%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#e53e3e">46%</td>
+        </tr><tr>
+            <td style="text-align:center">3</td>
+            <td><strong>goto-restaurants.com</strong></td>
+            <td style="text-align:center">6/13</td>
+            <td>
+                <div style="background:#fed7d7;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#e53e3e;height:100%;width:46%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#e53e3e">46%</td>
+        </tr><tr>
+            <td style="text-align:center">4</td>
+            <td><strong>wanderlog.com</strong></td>
+            <td style="text-align:center">6/13</td>
+            <td>
+                <div style="background:#fed7d7;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#e53e3e;height:100%;width:46%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#e53e3e">46%</td>
+        </tr><tr>
+            <td style="text-align:center">5</td>
+            <td><strong>hey-restaurants.com</strong></td>
+            <td style="text-align:center">6/13</td>
+            <td>
+                <div style="background:#fed7d7;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#e53e3e;height:100%;width:46%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#e53e3e">46%</td>
+        </tr><tr>
+            <td style="text-align:center">6</td>
+            <td><strong>gotoeat.net</strong></td>
+            <td style="text-align:center">5/13</td>
+            <td>
+                <div style="background:#fed7d7;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#e53e3e;height:100%;width:38%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#e53e3e">38%</td>
+        </tr><tr>
+            <td style="text-align:center">7</td>
+            <td><strong>restaurants-info.com</strong></td>
+            <td style="text-align:center">5/13</td>
+            <td>
+                <div style="background:#fed7d7;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#e53e3e;height:100%;width:38%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#e53e3e">38%</td>
+        </tr><tr>
+            <td style="text-align:center">8</td>
+            <td><strong>com-place.com</strong></td>
+            <td style="text-align:center">4/13</td>
+            <td>
+                <div style="background:#fed7d7;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#e53e3e;height:100%;width:31%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#e53e3e">31%</td>
+        </tr><tr>
+            <td style="text-align:center">9</td>
+            <td><strong>restaurantmenu.us.com</strong></td>
+            <td style="text-align:center">2/13</td>
+            <td>
+                <div style="background:#fed7d7;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#e53e3e;height:100%;width:15%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#e53e3e">15%</td>
+        </tr></tbody></table>
+    <div class="insight">
+        <h4>📊 Nhận xét</h4>
+        <p>• <strong>menu-res.com</strong> xuất hiện trong <strong>7/13</strong> websites của tôi (54%) — đối thủ trung bình<br>• <strong>wheree.com</strong> xuất hiện trong <strong>6/13</strong> websites của tôi (46%) — đối thủ trung bình<br>• <strong>goto-restaurants.com</strong> xuất hiện trong <strong>6/13</strong> websites của tôi (46%) — đối thủ trung bình<br>• <strong>wanderlog.com</strong> xuất hiện trong <strong>6/13</strong> websites của tôi (46%) — đối thủ trung bình<br>• <strong>hey-restaurants.com</strong> xuất hiện trong <strong>6/13</strong> websites của tôi (46%) — đối thủ trung bình</p>
+    </div>
 </div>
 
+<!-- CROSS-ANALYSIS: Website tôi xuất hiện trong nhóm đối thủ -->
+<div class="section" style="background:#f0fff4">
+    <h2 class="cross">Website Của Tôi Xuất Hiện Trong Nhóm Đối Thủ</h2>
+    <p style="color:#718096;margin-bottom:12px">Các website của tôi xuất hiện bao nhiêu lần trong danh sách competitors của nhóm đối thủ</p>
+    <table class="cross-table"><thead><tr>
+        <th>#</th><th>Website của tôi</th><th>Xuất hiện</th><th>Tỷ lệ</th><th>%</th>
+    </tr></thead><tbody><tr>
+            <td style="text-align:center">1</td>
+            <td><strong>goto-where.com</strong></td>
+            <td style="text-align:center">4/12</td>
+            <td>
+                <div style="background:#c6f6d5;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#38a169;height:100%;width:33%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#38a169">33%</td>
+        </tr><tr>
+            <td style="text-align:center">2</td>
+            <td><strong>menu-world.com</strong></td>
+            <td style="text-align:center">4/12</td>
+            <td>
+                <div style="background:#c6f6d5;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#38a169;height:100%;width:33%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#38a169">33%</td>
+        </tr><tr>
+            <td style="text-align:center">3</td>
+            <td><strong>res-menu.net</strong></td>
+            <td style="text-align:center">4/12</td>
+            <td>
+                <div style="background:#c6f6d5;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#38a169;height:100%;width:33%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#38a169">33%</td>
+        </tr><tr>
+            <td style="text-align:center">4</td>
+            <td><strong>restaurants-world.net</strong></td>
+            <td style="text-align:center">4/12</td>
+            <td>
+                <div style="background:#c6f6d5;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#38a169;height:100%;width:33%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#38a169">33%</td>
+        </tr><tr>
+            <td style="text-align:center">5</td>
+            <td><strong>wherevi.com</strong></td>
+            <td style="text-align:center">1/12</td>
+            <td>
+                <div style="background:#c6f6d5;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#38a169;height:100%;width:8%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#38a169">8%</td>
+        </tr><tr>
+            <td style="text-align:center">6</td>
+            <td><strong>placejoys.com</strong></td>
+            <td style="text-align:center">1/12</td>
+            <td>
+                <div style="background:#c6f6d5;border-radius:8px;height:20px;overflow:hidden">
+                    <div style="background:#38a169;height:100%;width:8%;border-radius:8px;min-width:3%"></div>
+                </div>
+            </td>
+            <td style="text-align:center;font-weight:bold;color:#38a169">8%</td>
+        </tr></tbody></table>
+    <div class="insight" style="border-left-color:#38a169;background:linear-gradient(135deg,#f0fff4,#e6fffa)">
+        <h4>💡 Nhận xét</h4>
+        <p>Có <strong>6/13</strong> website của tôi xuất hiện là competitor trong nhóm đối thủ. </p>
+    </div>
+</div>
+
+<!-- BIỂU ĐỒ SO SÁNH -->
+<div class="section">
+    <h2>So Sánh Số Lượng Competitors</h2>
+    <h3 style="color:#667eea;margin:15px 0 8px">Nhóm Nhà Hàng</h3>
+    <div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">goto-where.com</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">menu-world.com</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">grubbio.com</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">menustic.com</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">menufyy.com</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">gohotelly.com</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">res-menu.net</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">restaurants-world.net</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">wherevi.com</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">localoria.com</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">placejoys.com</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">wherebly.com</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:61.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">61</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">foodplacee.com</div>
+            <div style="flex:1;background:#e2e8f0;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#667eea,#764ba2);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div>
+    <h3 style="color:#e53e3e;margin:20px 0 8px">Nhóm Đối Thủ</h3>
+    <div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">wheree.com</div>
+            <div style="flex:1;background:#fed7d7;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#e53e3e,#c53030);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">com-fnb.com</div>
+            <div style="flex:1;background:#fed7d7;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#e53e3e,#c53030);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">com-place.com</div>
+            <div style="flex:1;background:#fed7d7;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#e53e3e,#c53030);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">goto-restaurants.com</div>
+            <div style="flex:1;background:#fed7d7;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#e53e3e,#c53030);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">wanderlog.com</div>
+            <div style="flex:1;background:#fed7d7;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#e53e3e,#c53030);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">menu-res.com</div>
+            <div style="flex:1;background:#fed7d7;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#e53e3e,#c53030);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">restaurantmenu.us.com</div>
+            <div style="flex:1;background:#fed7d7;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#e53e3e,#c53030);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">com-hotel.com</div>
+            <div style="flex:1;background:#fed7d7;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#e53e3e,#c53030);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">gotoeat.net</div>
+            <div style="flex:1;background:#fed7d7;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#e53e3e,#c53030);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">restaurants-info.com</div>
+            <div style="flex:1;background:#fed7d7;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#e53e3e,#c53030);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">hey-restaurants.com</div>
+            <div style="flex:1;background:#fed7d7;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#e53e3e,#c53030);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div><div style="display:flex;align-items:center;margin:5px 0;gap:8px">
+            <div style="width:170px;text-align:right;font-size:0.82em;color:#4a5568;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">eatat.us</div>
+            <div style="flex:1;background:#fed7d7;border-radius:6px;height:22px;overflow:hidden">
+                <div style="background:linear-gradient(90deg,#e53e3e,#c53030);height:100%;width:100.0%;border-radius:6px;display:flex;align-items:center;justify-content:flex-end;padding-right:6px;color:white;font-size:0.75em;font-weight:bold;min-width:40px">100</div>
+            </div>
+        </div>
+</div>
+
+<!-- TOP COMPETITORS CHUNG -->
+<div class="section" style="background:#f8f9fa">
+    <h2>Top 15 Đối Thủ Chung (Nhóm Nhà Hàng)</h2>
+    <p style="color:#718096;margin-bottom:12px">Các domain xuất hiện nhiều nhất trong danh sách competitors toàn bộ nhóm nhà hàng (⚔️ = thuộc nhóm đối thủ)</p>
+    <table><thead><tr><th>#</th><th>Đối thủ</th><th>Số website</th><th>Tỷ lệ</th></tr></thead>
+    <tbody><tr>
+            <td style="text-align:center;color:#667eea;font-weight:bold">#1</td>
+            <td><strong>menupix.com</strong> </td>
+            <td style="text-align:center">9</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#667eea;height:100%;width:69%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#764ba2;font-weight:bold">#2</td>
+            <td><strong>zmenu.com</strong> </td>
+            <td style="text-align:center">8</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#764ba2;height:100%;width:62%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#f093fb;font-weight:bold">#3</td>
+            <td><strong>restaurantguru.com</strong> </td>
+            <td style="text-align:center">8</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#f093fb;height:100%;width:62%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#4fd1c5;font-weight:bold">#4</td>
+            <td><strong>weeblyte.com</strong> </td>
+            <td style="text-align:center">8</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#4fd1c5;height:100%;width:62%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#fc8181;font-weight:bold">#5</td>
+            <td><strong>netwaiter.com</strong> </td>
+            <td style="text-align:center">8</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#fc8181;height:100%;width:62%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#f6ad55;font-weight:bold">#6</td>
+            <td><strong>menuweb.menu</strong> </td>
+            <td style="text-align:center">7</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#f6ad55;height:100%;width:54%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#68d391;font-weight:bold">#7</td>
+            <td><strong>menu-res.com</strong> ⚔️</td>
+            <td style="text-align:center">7</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#68d391;height:100%;width:54%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#63b3ed;font-weight:bold">#8</td>
+            <td><strong>whereyoueat.com</strong> </td>
+            <td style="text-align:center">7</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#63b3ed;height:100%;width:54%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#b794f4;font-weight:bold">#9</td>
+            <td><strong>goto-restaurants.com</strong> ⚔️</td>
+            <td style="text-align:center">6</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#b794f4;height:100%;width:46%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#feb2b2;font-weight:bold">#10</td>
+            <td><strong>postmates.com</strong> </td>
+            <td style="text-align:center">6</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#feb2b2;height:100%;width:46%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#fbd38d;font-weight:bold">#11</td>
+            <td><strong>restaurantji.com</strong> </td>
+            <td style="text-align:center">6</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#fbd38d;height:100%;width:46%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#9ae6b4;font-weight:bold">#12</td>
+            <td><strong>doordash.com</strong> </td>
+            <td style="text-align:center">6</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#9ae6b4;height:100%;width:46%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#90cdf4;font-weight:bold">#13</td>
+            <td><strong>hey-restaurants.com</strong> ⚔️</td>
+            <td style="text-align:center">6</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#90cdf4;height:100%;width:46%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#d6bcfa;font-weight:bold">#14</td>
+            <td><strong>wanderlog.com</strong> ⚔️</td>
+            <td style="text-align:center">6</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#d6bcfa;height:100%;width:46%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr><tr>
+            <td style="text-align:center;color:#fbb6ce;font-weight:bold">#15</td>
+            <td><strong>menuguide.com</strong> </td>
+            <td style="text-align:center">6</td>
+            <td>
+                <div style="background:#e2e8f0;border-radius:8px;height:18px;overflow:hidden">
+                    <div style="background:#fbb6ce;height:100%;width:46%;border-radius:8px;min-width:4%"></div>
+                </div>
+            </td>
+        </tr></tbody></table>
+</div>
+
+<!-- CHI TIẾT TOP 5 -->
+<div class="section">
+    <h2>Chi Tiết Top 5 Competitors Mỗi Website</h2>
+    <p style="color:#718096;margin-bottom:18px">Danh sách 5 đối thủ cạnh tranh hàng đầu của từng website</p>
+    
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    goto-where.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>menupix.com</strong></td>
+                    <td style="text-align:center">0.12</td>
+                    <td style="text-align:right">25,690</td>
+                    <td style="text-align:right">1,786,516</td>
+                    <td style="text-align:right">156.1K</td>
+                    <td style="text-align:right">$13.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>zmenu.com</strong></td>
+                    <td style="text-align:center">0.12</td>
+                    <td style="text-align:right">25,044</td>
+                    <td style="text-align:right">1,600,223</td>
+                    <td style="text-align:right">218.3K</td>
+                    <td style="text-align:right">$10.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>restaurantguru.com</strong></td>
+                    <td style="text-align:center">0.09</td>
+                    <td style="text-align:right">13,244</td>
+                    <td style="text-align:right">2,156,036</td>
+                    <td style="text-align:right">48.1K</td>
+                    <td style="text-align:right">$4.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>weeblyte.com</strong></td>
+                    <td style="text-align:center">0.09</td>
+                    <td style="text-align:right">15,122</td>
+                    <td style="text-align:right">518,914</td>
+                    <td style="text-align:right">752.9K</td>
+                    <td style="text-align:right">$163.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>singleplatform.com</strong></td>
+                    <td style="text-align:center">0.08</td>
+                    <td style="text-align:right">32,424</td>
+                    <td style="text-align:right">1,953,213</td>
+                    <td style="text-align:right">895.3K</td>
+                    <td style="text-align:right">$229.0K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    menu-world.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>zmenu.com</strong></td>
+                    <td style="text-align:center">0.13</td>
+                    <td style="text-align:right">31,716</td>
+                    <td style="text-align:right">1,600,223</td>
+                    <td style="text-align:right">218.3K</td>
+                    <td style="text-align:right">$10.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>singleplatform.com</strong></td>
+                    <td style="text-align:center">0.13</td>
+                    <td style="text-align:right">58,661</td>
+                    <td style="text-align:right">1,953,213</td>
+                    <td style="text-align:right">895.3K</td>
+                    <td style="text-align:right">$229.0K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>menupix.com</strong></td>
+                    <td style="text-align:center">0.13</td>
+                    <td style="text-align:right">32,598</td>
+                    <td style="text-align:right">1,786,516</td>
+                    <td style="text-align:right">156.1K</td>
+                    <td style="text-align:right">$13.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>postmates.com</strong></td>
+                    <td style="text-align:center">0.10</td>
+                    <td style="text-align:right">67,777</td>
+                    <td style="text-align:right">3,520,634</td>
+                    <td style="text-align:right">1.3M</td>
+                    <td style="text-align:right">$819.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>order.online</strong></td>
+                    <td style="text-align:center">0.10</td>
+                    <td style="text-align:right">35,306</td>
+                    <td style="text-align:right">1,602,516</td>
+                    <td style="text-align:right">1.9M</td>
+                    <td style="text-align:right">$920.0K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    grubbio.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>soulmama.co.uk</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">364</td>
+                    <td style="text-align:right">148</td>
+                    <td style="text-align:right">$14</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>cafelala.blogspot.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">2</td>
+                    <td style="text-align:right">1,796</td>
+                    <td style="text-align:right">84</td>
+                    <td style="text-align:right">$7</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>zushipuzzle.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">78</td>
+                    <td style="text-align:right">2.2K</td>
+                    <td style="text-align:right">$37</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>wsite.top</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">2</td>
+                    <td style="text-align:right">4,335</td>
+                    <td style="text-align:right">6.3K</td>
+                    <td style="text-align:right">$4.6K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>sipcafenashville.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">201</td>
+                    <td style="text-align:right">1.1K</td>
+                    <td style="text-align:right">$712</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    menustic.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>noodles.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">3</td>
+                    <td style="text-align:right">135,343</td>
+                    <td style="text-align:right">770.8K</td>
+                    <td style="text-align:right">$178.6K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>hctn.org</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">542</td>
+                    <td style="text-align:right">461</td>
+                    <td style="text-align:right">$133</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>lacontadinella.it</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">3</td>
+                    <td style="text-align:right">0</td>
+                    <td style="text-align:right">$0</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>bijouterierivet.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">4</td>
+                    <td style="text-align:right">0</td>
+                    <td style="text-align:right">$0</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>menuorg.online</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">2</td>
+                    <td style="text-align:right">2,016</td>
+                    <td style="text-align:right">2.6K</td>
+                    <td style="text-align:right">$1.8K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    menufyy.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>restaurantji.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">392</td>
+                    <td style="text-align:right">854,712</td>
+                    <td style="text-align:right">10.5K</td>
+                    <td style="text-align:right">$652</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>restaurantguru.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">1,071</td>
+                    <td style="text-align:right">2,156,036</td>
+                    <td style="text-align:right">48.1K</td>
+                    <td style="text-align:right">$4.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>weeblyte.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">958</td>
+                    <td style="text-align:right">518,914</td>
+                    <td style="text-align:right">752.9K</td>
+                    <td style="text-align:right">$163.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>zmenu.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">1,894</td>
+                    <td style="text-align:right">1,600,223</td>
+                    <td style="text-align:right">218.3K</td>
+                    <td style="text-align:right">$10.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>menupix.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">1,640</td>
+                    <td style="text-align:right">1,786,516</td>
+                    <td style="text-align:right">156.1K</td>
+                    <td style="text-align:right">$13.8K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    gohotelly.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>gohotelo.com</strong></td>
+                    <td style="text-align:center">0.05</td>
+                    <td style="text-align:right">57</td>
+                    <td style="text-align:right">2,347</td>
+                    <td style="text-align:right">5.9K</td>
+                    <td style="text-align:right">$4.1K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>momandpopmotels.com</strong></td>
+                    <td style="text-align:center">0.02</td>
+                    <td style="text-align:right">22</td>
+                    <td style="text-align:right">3,764</td>
+                    <td style="text-align:right">1.0K</td>
+                    <td style="text-align:right">$747</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>waterwinterwonderland.com</strong></td>
+                    <td style="text-align:center">0.02</td>
+                    <td style="text-align:right">16</td>
+                    <td style="text-align:right">20,730</td>
+                    <td style="text-align:right">788</td>
+                    <td style="text-align:right">$214</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>hotelsearchusa.com</strong></td>
+                    <td style="text-align:center">0.02</td>
+                    <td style="text-align:right">15</td>
+                    <td style="text-align:right">2,043</td>
+                    <td style="text-align:right">1.7K</td>
+                    <td style="text-align:right">$1.3K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>thenaturephuket.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">4</td>
+                    <td style="text-align:right">190</td>
+                    <td style="text-align:right">403</td>
+                    <td style="text-align:right">$556</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    res-menu.net <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>findmenuworld.com</strong></td>
+                    <td style="text-align:center">0.16</td>
+                    <td style="text-align:right">20,626</td>
+                    <td style="text-align:right">195,611</td>
+                    <td style="text-align:right">73.0K</td>
+                    <td style="text-align:right">$21.3K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>weeblyte.com</strong></td>
+                    <td style="text-align:center">0.13</td>
+                    <td style="text-align:right">21,160</td>
+                    <td style="text-align:right">518,914</td>
+                    <td style="text-align:right">752.9K</td>
+                    <td style="text-align:right">$163.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>zmenu.com</strong></td>
+                    <td style="text-align:center">0.12</td>
+                    <td style="text-align:right">26,383</td>
+                    <td style="text-align:right">1,600,223</td>
+                    <td style="text-align:right">218.3K</td>
+                    <td style="text-align:right">$10.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>menupix.com</strong></td>
+                    <td style="text-align:center">0.12</td>
+                    <td style="text-align:right">26,103</td>
+                    <td style="text-align:right">1,786,516</td>
+                    <td style="text-align:right">156.1K</td>
+                    <td style="text-align:right">$13.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>singleplatform.com</strong></td>
+                    <td style="text-align:center">0.10</td>
+                    <td style="text-align:right">42,302</td>
+                    <td style="text-align:right">1,953,213</td>
+                    <td style="text-align:right">895.3K</td>
+                    <td style="text-align:right">$229.0K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    restaurants-world.net <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>weeblyte.com</strong></td>
+                    <td style="text-align:center">0.12</td>
+                    <td style="text-align:right">18,392</td>
+                    <td style="text-align:right">518,914</td>
+                    <td style="text-align:right">752.9K</td>
+                    <td style="text-align:right">$163.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>zmenu.com</strong></td>
+                    <td style="text-align:center">0.10</td>
+                    <td style="text-align:right">20,374</td>
+                    <td style="text-align:right">1,600,223</td>
+                    <td style="text-align:right">218.3K</td>
+                    <td style="text-align:right">$10.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>menupix.com</strong></td>
+                    <td style="text-align:center">0.09</td>
+                    <td style="text-align:right">19,198</td>
+                    <td style="text-align:right">1,786,516</td>
+                    <td style="text-align:right">156.1K</td>
+                    <td style="text-align:right">$13.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>goto-restaurants.com</strong></td>
+                    <td style="text-align:center">0.08</td>
+                    <td style="text-align:right">10,074</td>
+                    <td style="text-align:right">419,357</td>
+                    <td style="text-align:right">358.2K</td>
+                    <td style="text-align:right">$66.9K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>singleplatform.com</strong></td>
+                    <td style="text-align:center">0.08</td>
+                    <td style="text-align:right">32,482</td>
+                    <td style="text-align:right">1,953,213</td>
+                    <td style="text-align:right">895.3K</td>
+                    <td style="text-align:right">$229.0K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    wherevi.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>hey-restaurants.com</strong></td>
+                    <td style="text-align:center">0.02</td>
+                    <td style="text-align:right">472</td>
+                    <td style="text-align:right">145,535</td>
+                    <td style="text-align:right">100.5K</td>
+                    <td style="text-align:right">$15.1K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>menu-res.com</strong></td>
+                    <td style="text-align:center">0.02</td>
+                    <td style="text-align:right">523</td>
+                    <td style="text-align:right">131,446</td>
+                    <td style="text-align:right">204.8K</td>
+                    <td style="text-align:right">$31.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>weeblyte.com</strong></td>
+                    <td style="text-align:center">0.02</td>
+                    <td style="text-align:right">2,660</td>
+                    <td style="text-align:right">518,914</td>
+                    <td style="text-align:right">752.9K</td>
+                    <td style="text-align:right">$163.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>goto-restaurants.com</strong></td>
+                    <td style="text-align:center">0.02</td>
+                    <td style="text-align:right">1,298</td>
+                    <td style="text-align:right">419,357</td>
+                    <td style="text-align:right">358.2K</td>
+                    <td style="text-align:right">$66.9K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>findmenuworld.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">365</td>
+                    <td style="text-align:right">195,611</td>
+                    <td style="text-align:right">73.0K</td>
+                    <td style="text-align:right">$21.3K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    localoria.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>basmahalsohbany.github.io</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">8</td>
+                    <td style="text-align:right">67</td>
+                    <td style="text-align:right">591</td>
+                    <td style="text-align:right">$15</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>arandasmexicancuisine.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">8</td>
+                    <td style="text-align:right">927</td>
+                    <td style="text-align:right">2.0K</td>
+                    <td style="text-align:right">$1.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>lahacienditachi.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">13</td>
+                    <td style="text-align:right">213</td>
+                    <td style="text-align:right">905</td>
+                    <td style="text-align:right">$283</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>taqueriasarandas.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">12</td>
+                    <td style="text-align:right">1,275</td>
+                    <td style="text-align:right">36.2K</td>
+                    <td style="text-align:right">$17.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>yiannisgyros.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">8</td>
+                    <td style="text-align:right">471</td>
+                    <td style="text-align:right">3.0K</td>
+                    <td style="text-align:right">$1.2K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    placejoys.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>menu-res.com</strong></td>
+                    <td style="text-align:center">0.03</td>
+                    <td style="text-align:right">686</td>
+                    <td style="text-align:right">131,446</td>
+                    <td style="text-align:right">204.8K</td>
+                    <td style="text-align:right">$31.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>weeblyte.com</strong></td>
+                    <td style="text-align:center">0.03</td>
+                    <td style="text-align:right">3,466</td>
+                    <td style="text-align:right">518,914</td>
+                    <td style="text-align:right">752.9K</td>
+                    <td style="text-align:right">$163.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>restaurants-us.com</strong></td>
+                    <td style="text-align:center">0.02</td>
+                    <td style="text-align:right">522</td>
+                    <td style="text-align:right">142,622</td>
+                    <td style="text-align:right">174.0K</td>
+                    <td style="text-align:right">$21.2K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>zmenu.com</strong></td>
+                    <td style="text-align:center">0.02</td>
+                    <td style="text-align:right">4,036</td>
+                    <td style="text-align:right">1,600,223</td>
+                    <td style="text-align:right">218.3K</td>
+                    <td style="text-align:right">$10.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>restaurantguru.com</strong></td>
+                    <td style="text-align:center">0.02</td>
+                    <td style="text-align:right">2,097</td>
+                    <td style="text-align:right">2,156,036</td>
+                    <td style="text-align:right">48.1K</td>
+                    <td style="text-align:right">$4.7K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    wherebly.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(61 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>seafoodandmore.shop</strong></td>
+                    <td style="text-align:center">0.07</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">10</td>
+                    <td style="text-align:right">345</td>
+                    <td style="text-align:right">$347</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>theoriginalnealsrestaurant.shop</strong></td>
+                    <td style="text-align:center">0.05</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">42</td>
+                    <td style="text-align:right">153</td>
+                    <td style="text-align:right">$0</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>foodsmo.com</strong></td>
+                    <td style="text-align:center">0.05</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">2</td>
+                    <td style="text-align:right">34</td>
+                    <td style="text-align:right">$0</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>theharvesttablebuffet.com</strong></td>
+                    <td style="text-align:center">0.03</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">227</td>
+                    <td style="text-align:right">3.0K</td>
+                    <td style="text-align:right">$81</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>michaelmckeegallery.com</strong></td>
+                    <td style="text-align:center">0.02</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">103</td>
+                    <td style="text-align:right">34</td>
+                    <td style="text-align:right">$16</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #667eea;margin-bottom:8px">
+                    foodplacee.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>sybilsoriginal.com</strong></td>
+                    <td style="text-align:center">0.10</td>
+                    <td style="text-align:right">3</td>
+                    <td style="text-align:right">85</td>
+                    <td style="text-align:right">1.6K</td>
+                    <td style="text-align:right">$1.4K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>sybilsbakeryrestaurant.shop</strong></td>
+                    <td style="text-align:center">0.06</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">26</td>
+                    <td style="text-align:right">35</td>
+                    <td style="text-align:right">$29</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>jamaicaway.shop</strong></td>
+                    <td style="text-align:center">0.05</td>
+                    <td style="text-align:right">2</td>
+                    <td style="text-align:right">49</td>
+                    <td style="text-align:right">263</td>
+                    <td style="text-align:right">$119</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>jamaicawaylimited.com</strong></td>
+                    <td style="text-align:center">0.05</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">88</td>
+                    <td style="text-align:right">635</td>
+                    <td style="text-align:right">$1.4K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>patrongrillhumble.com</strong></td>
+                    <td style="text-align:center">0.03</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">238</td>
+                    <td style="text-align:right">2.0K</td>
+                    <td style="text-align:right">$194</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #e53e3e;margin-bottom:8px">
+                    wheree.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>mapquest.com</strong></td>
+                    <td style="text-align:center">0.24</td>
+                    <td style="text-align:right">3,586,177</td>
+                    <td style="text-align:right">85,069,554</td>
+                    <td style="text-align:right">40.7M</td>
+                    <td style="text-align:right">$21.8M</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>nextdoor.com</strong></td>
+                    <td style="text-align:center">0.19</td>
+                    <td style="text-align:right">698,822</td>
+                    <td style="text-align:right">6,010,278</td>
+                    <td style="text-align:right">3.2M</td>
+                    <td style="text-align:right">$2.2M</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>doordash.com</strong></td>
+                    <td style="text-align:center">0.18</td>
+                    <td style="text-align:right">625,974</td>
+                    <td style="text-align:right">8,576,158</td>
+                    <td style="text-align:right">19.4M</td>
+                    <td style="text-align:right">$20.1M</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>waze.com</strong></td>
+                    <td style="text-align:center">0.18</td>
+                    <td style="text-align:right">724,272</td>
+                    <td style="text-align:right">8,753,921</td>
+                    <td style="text-align:right">7.1M</td>
+                    <td style="text-align:right">$2.6M</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>twitter.com</strong></td>
+                    <td style="text-align:center">0.17</td>
+                    <td style="text-align:right">947,924</td>
+                    <td style="text-align:right">6,141,416</td>
+                    <td style="text-align:right">63.1M</td>
+                    <td style="text-align:right">$69.6M</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #e53e3e;margin-bottom:8px">
+                    com-fnb.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>menuweb.menu</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">208</td>
+                    <td style="text-align:right">273,167</td>
+                    <td style="text-align:right">35.6K</td>
+                    <td style="text-align:right">$1.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>menu-res.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">134</td>
+                    <td style="text-align:right">131,446</td>
+                    <td style="text-align:right">204.8K</td>
+                    <td style="text-align:right">$31.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>restaurants-us.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">168</td>
+                    <td style="text-align:right">142,622</td>
+                    <td style="text-align:right">174.0K</td>
+                    <td style="text-align:right">$21.2K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>tonyspizzanapoletana.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">12,605</td>
+                    <td style="text-align:right">77.2K</td>
+                    <td style="text-align:right">$53.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>latapatia.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">3,587</td>
+                    <td style="text-align:right">3.8K</td>
+                    <td style="text-align:right">$2.4K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #e53e3e;margin-bottom:8px">
+                    com-place.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>giftly.com</strong></td>
+                    <td style="text-align:center">0.06</td>
+                    <td style="text-align:right">15,668</td>
+                    <td style="text-align:right">1,327,809</td>
+                    <td style="text-align:right">130.7K</td>
+                    <td style="text-align:right">$97.3K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>cmac.ws</strong></td>
+                    <td style="text-align:center">0.05</td>
+                    <td style="text-align:right">11,142</td>
+                    <td style="text-align:right">1,175,718</td>
+                    <td style="text-align:right">95.7K</td>
+                    <td style="text-align:right">$59.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>fresha.com</strong></td>
+                    <td style="text-align:center">0.05</td>
+                    <td style="text-align:right">11,754</td>
+                    <td style="text-align:right">1,479,864</td>
+                    <td style="text-align:right">692.3K</td>
+                    <td style="text-align:right">$435.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>edan.io</strong></td>
+                    <td style="text-align:center">0.04</td>
+                    <td style="text-align:right">6,185</td>
+                    <td style="text-align:right">290,384</td>
+                    <td style="text-align:right">667.8K</td>
+                    <td style="text-align:right">$439.3K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>hub.biz</strong></td>
+                    <td style="text-align:center">0.03</td>
+                    <td style="text-align:right">4,731</td>
+                    <td style="text-align:right">280,177</td>
+                    <td style="text-align:right">98.5K</td>
+                    <td style="text-align:right">$52.2K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #e53e3e;margin-bottom:8px">
+                    goto-restaurants.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>zmenu.com</strong></td>
+                    <td style="text-align:center">0.14</td>
+                    <td style="text-align:right">26,025</td>
+                    <td style="text-align:right">1,600,223</td>
+                    <td style="text-align:right">218.3K</td>
+                    <td style="text-align:right">$10.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>menupix.com</strong></td>
+                    <td style="text-align:center">0.12</td>
+                    <td style="text-align:right">20,973</td>
+                    <td style="text-align:right">1,786,516</td>
+                    <td style="text-align:right">156.1K</td>
+                    <td style="text-align:right">$13.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>weeblyte.com</strong></td>
+                    <td style="text-align:center">0.12</td>
+                    <td style="text-align:right">15,929</td>
+                    <td style="text-align:right">518,914</td>
+                    <td style="text-align:right">752.9K</td>
+                    <td style="text-align:right">$163.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>res-menu.net</strong></td>
+                    <td style="text-align:center">0.09</td>
+                    <td style="text-align:right">11,541</td>
+                    <td style="text-align:right">950,361</td>
+                    <td style="text-align:right">599.1K</td>
+                    <td style="text-align:right">$121.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>restaurantguru.com</strong></td>
+                    <td style="text-align:center">0.08</td>
+                    <td style="text-align:right">9,504</td>
+                    <td style="text-align:right">2,156,036</td>
+                    <td style="text-align:right">48.1K</td>
+                    <td style="text-align:right">$4.7K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #e53e3e;margin-bottom:8px">
+                    wanderlog.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>weatherspark.com</strong></td>
+                    <td style="text-align:center">0.15</td>
+                    <td style="text-align:right">93,844</td>
+                    <td style="text-align:right">1,057,575</td>
+                    <td style="text-align:right">4.4M</td>
+                    <td style="text-align:right">$2.1M</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>wheree.com</strong></td>
+                    <td style="text-align:center">0.13</td>
+                    <td style="text-align:right">389,943</td>
+                    <td style="text-align:right">15,058,887</td>
+                    <td style="text-align:right">4.2M</td>
+                    <td style="text-align:right">$1.7M</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>opentable.com</strong></td>
+                    <td style="text-align:center">0.12</td>
+                    <td style="text-align:right">184,548</td>
+                    <td style="text-align:right">4,693,045</td>
+                    <td style="text-align:right">7.8M</td>
+                    <td style="text-align:right">$4.9M</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>ubereats.com</strong></td>
+                    <td style="text-align:center">0.10</td>
+                    <td style="text-align:right">187,422</td>
+                    <td style="text-align:right">6,959,463</td>
+                    <td style="text-align:right">10.7M</td>
+                    <td style="text-align:right">$10.3M</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>mindtrip.ai</strong></td>
+                    <td style="text-align:center">0.10</td>
+                    <td style="text-align:right">99,148</td>
+                    <td style="text-align:right">1,786,142</td>
+                    <td style="text-align:right">341.2K</td>
+                    <td style="text-align:right">$71.9K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #e53e3e;margin-bottom:8px">
+                    menu-res.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>menuweb.menu</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">208</td>
+                    <td style="text-align:right">273,167</td>
+                    <td style="text-align:right">35.6K</td>
+                    <td style="text-align:right">$1.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>menu-res.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">134</td>
+                    <td style="text-align:right">131,446</td>
+                    <td style="text-align:right">204.8K</td>
+                    <td style="text-align:right">$31.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>restaurants-us.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">168</td>
+                    <td style="text-align:right">142,622</td>
+                    <td style="text-align:right">174.0K</td>
+                    <td style="text-align:right">$21.2K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>tonyspizzanapoletana.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">12,605</td>
+                    <td style="text-align:right">77.2K</td>
+                    <td style="text-align:right">$53.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>latapatia.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">3,587</td>
+                    <td style="text-align:right">3.8K</td>
+                    <td style="text-align:right">$2.4K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #e53e3e;margin-bottom:8px">
+                    restaurantmenu.us.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>menuweb.menu</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">208</td>
+                    <td style="text-align:right">273,167</td>
+                    <td style="text-align:right">35.6K</td>
+                    <td style="text-align:right">$1.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>menu-res.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">134</td>
+                    <td style="text-align:right">131,446</td>
+                    <td style="text-align:right">204.8K</td>
+                    <td style="text-align:right">$31.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>restaurants-us.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">168</td>
+                    <td style="text-align:right">142,622</td>
+                    <td style="text-align:right">174.0K</td>
+                    <td style="text-align:right">$21.2K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>tonyspizzanapoletana.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">12,605</td>
+                    <td style="text-align:right">77.2K</td>
+                    <td style="text-align:right">$53.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>latapatia.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">3,587</td>
+                    <td style="text-align:right">3.8K</td>
+                    <td style="text-align:right">$2.4K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #e53e3e;margin-bottom:8px">
+                    com-hotel.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>menuweb.menu</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">208</td>
+                    <td style="text-align:right">273,167</td>
+                    <td style="text-align:right">35.6K</td>
+                    <td style="text-align:right">$1.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>menu-res.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">134</td>
+                    <td style="text-align:right">131,446</td>
+                    <td style="text-align:right">204.8K</td>
+                    <td style="text-align:right">$31.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>restaurants-us.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">168</td>
+                    <td style="text-align:right">142,622</td>
+                    <td style="text-align:right">174.0K</td>
+                    <td style="text-align:right">$21.2K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>tonyspizzanapoletana.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">12,605</td>
+                    <td style="text-align:right">77.2K</td>
+                    <td style="text-align:right">$53.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>latapatia.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">3,587</td>
+                    <td style="text-align:right">3.8K</td>
+                    <td style="text-align:right">$2.4K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #e53e3e;margin-bottom:8px">
+                    gotoeat.net <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>menuweb.menu</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">208</td>
+                    <td style="text-align:right">273,167</td>
+                    <td style="text-align:right">35.6K</td>
+                    <td style="text-align:right">$1.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>menu-res.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">134</td>
+                    <td style="text-align:right">131,446</td>
+                    <td style="text-align:right">204.8K</td>
+                    <td style="text-align:right">$31.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>restaurants-us.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">168</td>
+                    <td style="text-align:right">142,622</td>
+                    <td style="text-align:right">174.0K</td>
+                    <td style="text-align:right">$21.2K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>tonyspizzanapoletana.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">12,605</td>
+                    <td style="text-align:right">77.2K</td>
+                    <td style="text-align:right">$53.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>latapatia.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">3,587</td>
+                    <td style="text-align:right">3.8K</td>
+                    <td style="text-align:right">$2.4K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #e53e3e;margin-bottom:8px">
+                    restaurants-info.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>menuweb.menu</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">208</td>
+                    <td style="text-align:right">273,167</td>
+                    <td style="text-align:right">35.6K</td>
+                    <td style="text-align:right">$1.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>menu-res.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">134</td>
+                    <td style="text-align:right">131,446</td>
+                    <td style="text-align:right">204.8K</td>
+                    <td style="text-align:right">$31.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>restaurants-us.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">168</td>
+                    <td style="text-align:right">142,622</td>
+                    <td style="text-align:right">174.0K</td>
+                    <td style="text-align:right">$21.2K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>tonyspizzanapoletana.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">12,605</td>
+                    <td style="text-align:right">77.2K</td>
+                    <td style="text-align:right">$53.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>latapatia.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">3,587</td>
+                    <td style="text-align:right">3.8K</td>
+                    <td style="text-align:right">$2.4K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #e53e3e;margin-bottom:8px">
+                    hey-restaurants.com <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>menuweb.menu</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">208</td>
+                    <td style="text-align:right">273,167</td>
+                    <td style="text-align:right">35.6K</td>
+                    <td style="text-align:right">$1.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>menu-res.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">134</td>
+                    <td style="text-align:right">131,446</td>
+                    <td style="text-align:right">204.8K</td>
+                    <td style="text-align:right">$31.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>restaurants-us.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">168</td>
+                    <td style="text-align:right">142,622</td>
+                    <td style="text-align:right">174.0K</td>
+                    <td style="text-align:right">$21.2K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>tonyspizzanapoletana.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">12,605</td>
+                    <td style="text-align:right">77.2K</td>
+                    <td style="text-align:right">$53.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>latapatia.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">3,587</td>
+                    <td style="text-align:right">3.8K</td>
+                    <td style="text-align:right">$2.4K</td>
+                </tr></tbody></table>
+            </div>
+            <div style="margin-bottom:20px">
+                <h4 style="padding:8px 12px;background:#f7fafc;border-radius:6px;border-left:4px solid #e53e3e;margin-bottom:8px">
+                    eatat.us <span style="color:#a0aec0;font-weight:normal;font-size:0.8em">(100 đối thủ)</span>
+                </h4>
+                <table style="font-size:0.88em"><thead><tr>
+                    <th style="width:40px">#</th><th>Đối thủ</th><th>Relevance</th>
+                    <th>Common KW</th><th>Organic KW</th><th>Organic Traffic</th><th>Organic Cost</th>
+                </tr></thead><tbody><tr>
+                    <td style="text-align:center">1</td>
+                    <td><strong>menuweb.menu</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">208</td>
+                    <td style="text-align:right">273,167</td>
+                    <td style="text-align:right">35.6K</td>
+                    <td style="text-align:right">$1.7K</td>
+                </tr><tr>
+                    <td style="text-align:center">2</td>
+                    <td><strong>menu-res.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">134</td>
+                    <td style="text-align:right">131,446</td>
+                    <td style="text-align:right">204.8K</td>
+                    <td style="text-align:right">$31.8K</td>
+                </tr><tr>
+                    <td style="text-align:center">3</td>
+                    <td><strong>restaurants-us.com</strong></td>
+                    <td style="text-align:center">0.01</td>
+                    <td style="text-align:right">168</td>
+                    <td style="text-align:right">142,622</td>
+                    <td style="text-align:right">174.0K</td>
+                    <td style="text-align:right">$21.2K</td>
+                </tr><tr>
+                    <td style="text-align:center">4</td>
+                    <td><strong>tonyspizzanapoletana.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">12,605</td>
+                    <td style="text-align:right">77.2K</td>
+                    <td style="text-align:right">$53.5K</td>
+                </tr><tr>
+                    <td style="text-align:center">5</td>
+                    <td><strong>latapatia.com</strong></td>
+                    <td style="text-align:center">0.00</td>
+                    <td style="text-align:right">1</td>
+                    <td style="text-align:right">3,587</td>
+                    <td style="text-align:right">3.8K</td>
+                    <td style="text-align:right">$2.4K</td>
+                </tr></tbody></table>
+            </div>
+</div>
+
+<!-- FOOTER -->
 <div class="footer">
-<p>🤖 Auto-generated by Bot AI | Last updated: 27/03/2026 23:50</p>
-<p>GitHub: theanh1999/semrush-report</p>
+    <p>Báo cáo tự động bởi <strong>Competitor Checker Skill</strong> | 28/03/2026 22:05</p>
+    <p style="margin-top:5px">Nguồn: Semrush muatool v3.0.0 — Giới hạn export: top 100 đối thủ/domain</p>
+    <p style="margin-top:5px">Lần chạy tiếp theo: Thứ 7, 04/04/2026 22:00 (UTC+7)</p>
 </div>
-</div>
-</body>
-</html>
+
+</div></body></html>
